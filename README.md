@@ -11,7 +11,18 @@
 * 🍎 **macOS 安装包 (M 芯片)**：[点击下载](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS-%28M%E8%8A%AF%E7%89%87%29.pkg)
 * 🍎 **macOS 安装包 (Intel 芯片)**：[点击下载](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS%28Inter%E8%8A%AF%E7%89%87%29.pkg)
 * 🐧 **Linux 安装包**：[点击下载](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage)
-* 🌍 **网页版（用户仪表盘）**：[dashboard.singlinkvpn.com](https://dashboard.singlinkvpn.com/)
+* 🌍 **网页版（用户仪表盘）**：[立即进入](https://dashboard.singlinkvpn.com/)
+* 🌍 **官方网站**：[立即进入](https://singlinkvpn.com/)
+
+### 🎁 交流社群
+
+* [Telegram 交流社群](https://t.me/singlinkvpn)
+
+### ⚡️ 如部分地区无法打开官网，可尝试以下下载地址👇：
+
+* [下载地址1](https://singlink.cc)
+* [下载地址2](https://singlink02.com)
+
 
 ## 🌟 产品特点
 
