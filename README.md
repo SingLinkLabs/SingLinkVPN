@@ -35,7 +35,7 @@
 ![星连VPN](https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/11379024/793635_949422.jpeg)
 
 
-# 🌐 SingLinkVPN
+# 🌐 [SingLinkVPN](https://sg.singlinkvpn.com/)
 
 SingLinkVPN is a truly **free-to-try** high-speed cross-border VPN.
 Supports **iOS / Android / Windows / macOS / Linux / Web** with one-click connection, **no logs, full encryption, unlimited bandwidth**.
