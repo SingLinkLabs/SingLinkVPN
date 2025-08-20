@@ -1,4 +1,4 @@
-# 🌐 星连VPN 「SingLinkVPN」
+# 🌐 [星连VPN](https://singlinkvpn.com/)
 
 星连VPN，真正 **免费试用** 的高速跨境 VPN 服务。
 支持 **iOS / Android / Windows / macOS / Linux / 网页版**，一键秒连，**全程加密、不留日志、不限流量**。
