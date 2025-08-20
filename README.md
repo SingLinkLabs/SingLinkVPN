@@ -16,7 +16,7 @@
 
 ### 🎁 交流社群
 
-* [Telegram 交流社群](https://t.me/singlinkvpn)
+* [Telegram 交流社群](https://t.me/singlink1688)
 
 ### ⚡️ 如部分地区无法打开官网，可尝试以下下载地址👇：
 
@@ -48,7 +48,18 @@ Supports **iOS / Android / Windows / macOS / Linux / Web** with one-click connec
 * 🍎 **macOS App (M Chip)**: [Download](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS-%28M%E8%8A%AF%E7%89%87%29.pkg)
 * 🍎 **macOS App (Intel Chip)**: [Download](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS%28Inter%E8%8A%AF%E7%89%87%29.pkg)
 * 🐧 **Linux App**: [Download](https://github.com/hiddify/hiddify-app/releases/latest/download/Hiddify-Linux-x64.AppImage)
-* 🌍 **Web Dashboard**: [dashboard.singlinkvpn.com](https://dashboard.singlinkvpn.com/)
+* 🌍 **Web Dashboard**: [Log in](https://dashboard.singlinkvpn.com/)
+* 🌍 **Offcial Website**: [Log in](https://singlinkvpn.com/)
+
+### 🎁 Telegram Group:
+
+* [Telegram Group](https://t.me/singlinkvpn_en)
+
+### ⚡️ Try it if some area can't open the offcial website👇：
+
+* [Download 1](https://singlink.cc)
+* [Download 2](https://singlink02.com)
+
 
 ## 🌟 Features
 
