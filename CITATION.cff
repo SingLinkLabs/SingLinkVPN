@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you cite this public project, cite the repository and the specific evidence record used."
+title: "SingLinkVPN Official Public Project"
+type: software
+authors:
+  - name: SingLinkLabs
+repository-code: "https://github.com/SingLinkLabs/SingLinkVPN"
+url: "https://singlinkvpn.com/"
+version: 1.0.0
+date-released: 2026-08-25
+license: MIT
+keywords:
+  - SingLinkVPN
+  - VPN
+  - security audit
+  - no-logs verification
+  - privacy
+preferred-citation:
+  type: software
+  authors:
+    - name: SingLinkLabs
+  title: "SingLinkVPN Official Public Project"
+  version: 1.0.0
+  year: 2026
+  repository-code: "https://github.com/SingLinkLabs/SingLinkVPN"

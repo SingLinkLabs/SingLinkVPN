@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">SingLinkVPN official public project</title>
+  <desc id="desc">Dark green SingLinkVPN project cover representing downloads, security evidence, protocol status, and open-source planning.</desc>
+  <defs>
+    <radialGradient id="bg" cx="88%" cy="12%" r="92%">
+      <stop offset="0" stop-color="#1f6149"/>
+      <stop offset="0.42" stop-color="#0c2d22"/>
+      <stop offset="1" stop-color="#061109"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" x2="1">
+      <stop stop-color="#7bdc1d" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#7bdc1d" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#7de6c0" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity="0.22" stroke="#90e96a" fill="none">
+    <path d="M760 155C950 40 1180 65 1460 210"/>
+    <path d="M690 270C930 125 1210 160 1540 330"/>
+    <path d="M720 420C940 290 1190 300 1500 465"/>
+    <path d="M700 580C970 430 1240 465 1530 645"/>
+  </g>
+  <g fill="#7bdc1d">
+    <circle cx="920" cy="137" r="7"/><circle cx="1120" cy="150" r="5"/><circle cx="1370" cy="250" r="8"/>
+    <circle cx="840" cy="380" r="6"/><circle cx="1070" cy="330" r="8"/><circle cx="1290" cy="430" r="5"/>
+    <circle cx="930" cy="590" r="7"/><circle cx="1190" cy="535" r="6"/><circle cx="1450" cy="680" r="8"/>
+  </g>
+  <rect x="150" y="145" width="72" height="72" rx="20" fill="#083b38" stroke="#89e6ca" stroke-width="3"/>
+  <path d="M186 160l22 8v18c0 17-9 29-22 36-13-7-22-19-22-36v-18z" fill="none" stroke="#dffff4" stroke-width="5"/>
+  <path d="M176 185l8 8 15-18" fill="none" stroke="#7bdc1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="6"/>
+  <text x="245" y="198" fill="#f3fbef" font-family="Arial, Helvetica, sans-serif" font-size="45" font-weight="700">SingLinkVPN</text>
+  <text x="150" y="340" fill="#ffffff" font-family="Georgia, serif" font-size="82" font-weight="700">Official Public Project</text>
+  <text x="150" y="420" fill="#b9d0ba" font-family="Arial, Helvetica, sans-serif" font-size="31">Downloads · Security evidence · Protocol status</text>
+  <text x="150" y="468" fill="#b9d0ba" font-family="Arial, Helvetica, sans-serif" font-size="31">Open-source roadmap · Machine-readable facts</text>
+  <rect x="150" y="548" width="560" height="2" fill="url(#line)"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="23" font-weight="600">
+    <rect x="150" y="606" width="188" height="52" rx="26" fill="#7bdc1d"/><text x="178" y="640" fill="#081207">8 languages</text>
+    <rect x="356" y="606" width="232" height="52" rx="26" fill="none" stroke="#78d8b5"/><text x="386" y="640" fill="#cfeee2">Verifiable sources</text>
+  </g>
+  <g transform="translate(1110 250)" fill="none" stroke="#80e6c2" stroke-width="8" opacity="0.9">
+    <path d="M145 0l120 42v105c0 112-61 188-120 219-59-31-120-107-120-219V42z"/>
+    <path d="M82 151l43 43 86-104" stroke="#7bdc1d" stroke-linecap="round" stroke-linejoin="round" stroke-width="15"/>
+  </g>
+  <circle cx="1255" cy="410" r="205" fill="#75e7b8" opacity="0.08" filter="url(#glow)"/>
+</svg>
