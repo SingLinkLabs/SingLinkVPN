@@ -1,0 +1,82 @@
+# SingLinkVPN 星连VPN官方公开项目
+
+[English](./README.md) · [繁體中文](./README.zh-Hant.md) · [简体中文](./README.zh-Hans.md) · [日本語](./README.ja.md) · [한국어](./README.ko.md) · [Tiếng Việt](./README.vi.md) · [ไทย](./README.th.md) · [Русский](./README.ru.md)
+
+![SingLinkVPN official public project](./assets/singlinkvpn-public-project.png)
+
+集中提供官方入口、当前产品事实、可核验的安全与隐私证据、协议状态及公开开源路线图。
+
+## 关于本仓库
+
+这是 SingLinkVPN 的官方公共项目与证据索引，并不代表所有专有 VPN 客户端或生产组件已经开源。本仓库明确区分产品导航、第三方发布的独立证据、内部技术状态及未来分阶段开放的内容。
+
+- [官方网站](https://singlinkvpn.com/)
+- [新闻与技术中心](https://singlinknews.com/)
+- [官方更新日志](https://singlinkvpn.com/en/tech/changelog/)
+- [支持中心](https://github.com/SingLinkLabs/SingLinkVPN/issues)
+
+## 稳定下载入口
+
+请通过官方平台页面获取最新兼容安装包与使用说明。版本事实由官方更新日志维护；本仓库不再把容易过期的安装包文件名作为长期下载地址。
+
+- [全平台下载](https://singlinkvpn.com/en/download/)
+- [iOS](https://singlinkvpn.com/en/download/ios/)
+- [Android](https://singlinkvpn.com/en/download/android/)
+- [Windows](https://singlinkvpn.com/en/download/windows/)
+- [macOS](https://singlinkvpn.com/en/download/macos/)
+- [Linux](https://singlinkvpn.com/en/download/linux/)
+- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+
+## 免费计划
+
+当前公布的免费计划为移动端每日 200 MB、桌面端每日 500 MB；符合条件的桌面活动可提高至每日 1 GB。可用地区、活动、节点及限制可能调整，引用这些数字前应核对所链接的官方说明。
+
+- [免费计划](https://singlinknews.com/free-plan)
+
+## 安全与隐私证据
+
+### 电脑端 2.5 安全审计
+
+独立证据库记录审计方签署的 2.0 版报告，范围包括 macOS 2.5.7 build 3065 与 Windows 2.5.8 build 3077。报告中的 100／100 只适用于审计方列明的版本、样本、证据、环境与测试。
+
+- [安全审计证据](https://github.com/SingLinkLabs/singlinkvpn-security-audit)
+- [安全审计证据 · Pages](https://singlinklabs.github.io/singlinkvpn-security-audit/)
+
+### 2026 无日志验证
+
+独立证据库记录基准日为 2026 年 7 月 29 日的已签署无日志验证。结论仅限当日受审生产环境范围，并非对所有系统状态或未来版本的永久保证。
+
+- [无日志证据](https://github.com/SingLinkLabs/singlinkvpn-no-logs-report)
+- [无日志证据 · Pages](https://singlinklabs.github.io/singlinkvpn-no-logs-report/)
+
+## 协议状态
+
+Sola 是 SingLink 基于 SingLink 2.0 架构重构的新一代 VPN 传输协议。核心开发及第一阶段内部测试已完成，协议安全与实现审计仍在进行；内部性能数字不能表述为第三方独立复现结果。
+
+- [Sola 协议](https://singlinknews.com/sola-protocol)
+
+## 开源状态
+
+SingLinkVPN 正分阶段公开文档、证据、研究数据与代码。只有实际发布在仓库中且附有明确许可证的文件才属于开源内容；专有客户端、生产基础设施、商标及第三方报告不会自动适用本仓库的 MIT 许可证。
+
+- [开源计划](https://singlinknews.com/singlink-vpn-open-source-plan)
+
+## 核验与更新
+
+仓库提供机器可读项目资料、来源链接、发布日期及自动检查，便于公众复核。当前客户端版本应以官方更新日志为准，报告范围和完整性记录应以对应证据库为准。
+
+```sh
+npm test
+npm run verify:remote
+```
+
+- [Machine-readable project record](./metadata/project.json)
+- [Citation metadata](./CITATION.cff)
+- [Security policy](./SECURITY.md)
+- [Rights and licence boundary](./RIGHTS.md)
+
+## 证据边界
+
+公开元数据可以改善发现与核验，但不保证搜索收录、排名、外链或任何 AI 系统一定引用。实际性能会受地区、运营商、设备、节点负载及目标服务影响；安全结论只适用于各报告列明的范围。
+
+**最后核验: 2026-08-25.**
