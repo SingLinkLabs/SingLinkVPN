@@ -1,6 +1,6 @@
 # Downloads and versions
 
-Use official platform pages instead of saving a version-specific installer URL. Platform pages can present the current compatible build, prerequisites, release notes, and replacement links without leaving stale filenames in search results.
+Official platform pages provide the current compatible SingLinkVPN build, prerequisites, installation instructions and release notes.
 
 | Platform | Official route |
 | --- | --- |
@@ -13,4 +13,4 @@ Use official platform pages instead of saving a version-specific installer URL. 
 
 Use the [all-platform download center](https://singlinkvpn.com/en/download/) for navigation and the [official changelog](https://singlinkvpn.com/en/tech/changelog/) for published version history.
 
-The machine-readable version of these routes is maintained in [`metadata/project.json`](../metadata/project.json). Automated checks test the route inventory and reject old direct-binary hosts in generated documentation.
+The machine-readable route inventory is maintained in [`metadata/project.json`](../metadata/project.json), and automated checks verify every published platform link.

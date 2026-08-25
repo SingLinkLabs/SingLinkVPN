@@ -26,6 +26,7 @@ const escapeHtml = (value) => String(value)
 
 const routeFor = (locale) => locale === 'en' ? '/' : `/${locale}/`;
 const urlFor = (locale) => `${project.pagesBaseUrl}${routeFor(locale)}`;
+const coverUrlFor = (locale) => `${project.pagesBaseUrl}/assets/covers/${locale}.png`;
 
 function link(url, label, className = '') {
   return `<a${className ? ` class="${className}"` : ''} href="${escapeHtml(url)}">${escapeHtml(label)}</a>`;
@@ -49,7 +50,7 @@ function page(copy, locale) {
         '@type': 'WebSite',
         '@id': `${project.pagesBaseUrl}/#website`,
         url: `${project.pagesBaseUrl}/`,
-        name: 'SingLinkVPN Official Public Project',
+        name: 'SingLinkVPN Free VPN & Open-Source Project',
         alternateName: project.alternateNames,
         inLanguage: locales.map((code) => JSON.parse(localeCopies.get(code)).htmlLang),
       },
@@ -69,8 +70,21 @@ function page(copy, locale) {
         name: project.name,
         alternateName: project.alternateNames,
         url: project.officialWebsite,
+        description: copy.description,
+        image: coverUrlFor(locale),
+        isAccessibleForFree: true,
         applicationCategory: 'SecurityApplication',
+        applicationSubCategory: 'VPN',
         operatingSystem: project.platforms.map(({ name }) => name).join(', '),
+        downloadUrl: project.downloadCenter,
+        offers: {
+          '@type': 'Offer',
+          price: '0',
+          priceCurrency: 'USD',
+          url: project.freePlan.source,
+          description: copy.free,
+        },
+        featureList: [copy.freeTitle, copy.openSourceTitle, copy.auditTitle, copy.noLogsTitle, copy.techTitle],
         sameAs: [
           project.repository,
           project.newsCenter,
@@ -93,17 +107,17 @@ function page(copy, locale) {
   ${alternates}
   <link rel="alternate" hreflang="x-default" href="${urlFor('en')}">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="SingLinkVPN Official Public Project">
+  <meta property="og:site_name" content="SingLinkVPN Free VPN &amp; Open-Source Project">
   <meta property="og:title" content="${escapeHtml(copy.title)}">
   <meta property="og:description" content="${escapeHtml(copy.description)}">
   <meta property="og:url" content="${canonical}">
-  <meta property="og:image" content="${project.pagesBaseUrl}/assets/singlinkvpn-public-project.png">
+  <meta property="og:image" content="${coverUrlFor(locale)}">
   <meta property="og:image:width" content="1600">
   <meta property="og:image:height" content="900">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="${escapeHtml(copy.title)}">
   <meta name="twitter:description" content="${escapeHtml(copy.description)}">
-  <meta name="twitter:image" content="${project.pagesBaseUrl}/assets/singlinkvpn-public-project.png">
+  <meta name="twitter:image" content="${coverUrlFor(locale)}">
   <script type="application/ld+json">${JSON.stringify(graph).replaceAll('<', '\\u003c')}</script>
   <style>
     :root{color-scheme:dark;--bg:#061107;--panel:#0c1d0e;--line:#27431b;--text:#edf8e8;--muted:#a8b9a2;--green:#83d800;--cyan:#62d7c9;--max:1160px}
@@ -125,7 +139,7 @@ function page(copy, locale) {
         ${link(project.downloadCenter, copy.labels.downloadCenter, 'button secondary')}
       </div>
     </section>
-    <img class="cover" src="${project.pagesBaseUrl}/assets/singlinkvpn-public-project.png" width="1600" height="900" alt="${escapeHtml(copy.h1)}">
+    <img class="cover" src="${coverUrlFor(locale)}" width="1600" height="900" alt="${escapeHtml(copy.coverTitle)}">
     <section class="grid">
       <article class="card wide"><h2>${escapeHtml(copy.aboutTitle)}</h2><p>${escapeHtml(copy.about)}</p><p>${link(project.newsCenter, copy.labels.newsCenter)} · ${link(project.changelog, copy.labels.changelog)} · ${link(project.support, copy.labels.support)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.downloadsTitle)}</h2><p>${escapeHtml(copy.downloads)}</p><ul class="platforms">${platformLinks}</ul></article>
@@ -135,7 +149,7 @@ function page(copy, locale) {
       <article class="card"><h2>${escapeHtml(copy.techTitle)}</h2><p>${escapeHtml(copy.tech)}</p><p>${link(project.technology.solaArticle, copy.labels.sola)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.openSourceTitle)}</h2><p>${escapeHtml(copy.openSource)}</p><p>${link(project.technology.openSourcePlan, copy.labels.openSource)}</p></article>
     </section>
-    <aside class="note"><strong>${escapeHtml(copy.limitsTitle)}.</strong> ${escapeHtml(copy.limits)} ${escapeHtml(copy.labels.lastVerified)}: ${project.lastVerified}.</aside>
+    <aside class="note"><strong>${escapeHtml(copy.trustTitle)}.</strong> ${escapeHtml(copy.trust)} ${escapeHtml(copy.labels.lastVerified)}: ${project.lastVerified}.</aside>
   </main>
   <footer>
     <nav>${link(project.repository, 'GitHub')} ${link(`${project.pagesBaseUrl}/metadata/project.json`, 'JSON')} ${link(`${project.pagesBaseUrl}/llms.txt`, 'llms.txt')} ${link(`${project.pagesBaseUrl}/sitemap.xml`, 'Sitemap')}</nav>
@@ -160,9 +174,11 @@ for (const locale of locales) {
 }
 
 await mkdir(path.join(dist, 'assets'), { recursive: true });
+await mkdir(path.join(dist, 'assets/covers'), { recursive: true });
 await mkdir(path.join(dist, 'metadata'), { recursive: true });
 await cp(path.join(root, 'assets/singlinkvpn-public-project.png'), path.join(dist, 'assets/singlinkvpn-public-project.png'));
 await cp(path.join(root, 'assets/singlinkvpn-public-project.svg'), path.join(dist, 'assets/singlinkvpn-public-project.svg'));
+await cp(path.join(root, 'assets/covers'), path.join(dist, 'assets/covers'), { recursive: true });
 await cp(path.join(root, 'metadata/project.json'), path.join(dist, 'metadata/project.json'));
 await cp(path.join(root, 'metadata/project.schema.json'), path.join(dist, 'metadata/project.schema.json'));
 await cp(path.join(root, 'llms.txt'), path.join(dist, 'llms.txt'));
