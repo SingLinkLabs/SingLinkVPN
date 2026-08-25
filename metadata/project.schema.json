@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://singlinklabs.github.io/SingLinkVPN/metadata/project.schema.json",
+  "title": "SingLinkVPN public project record",
+  "type": "object",
+  "required": ["name", "repositoryRole", "repository", "pagesBaseUrl", "officialWebsite", "newsCenter", "downloadCenter", "changelog", "freePlan", "platforms", "evidence", "technology", "lastVerified"],
+  "properties": {
+    "name": { "const": "SingLinkVPN" },
+    "repositoryRole": { "type": "string", "minLength": 10 },
+    "repository": { "type": "string", "format": "uri" },
+    "pagesBaseUrl": { "type": "string", "format": "uri" },
+    "officialWebsite": { "type": "string", "format": "uri" },
+    "newsCenter": { "type": "string", "format": "uri" },
+    "downloadCenter": { "type": "string", "format": "uri" },
+    "changelog": { "type": "string", "format": "uri" },
+    "freePlan": {
+      "type": "object",
+      "required": ["mobileDailyMb", "desktopDailyMb", "eligibleDesktopPromotionDailyMb", "source"]
+    },
+    "platforms": { "type": "array", "minItems": 6, "uniqueItems": true },
+    "evidence": { "type": "object", "required": ["securityAudit", "noLogsVerification", "umbrellaIndex"] },
+    "technology": { "type": "object", "required": ["solaArticle", "status", "openSourcePlan"] },
+    "lastVerified": { "type": "string", "format": "date" }
+  },
+  "additionalProperties": true
+}

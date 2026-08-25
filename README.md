@@ -1,71 +1,82 @@
-# 🌐 [星连VPN](https://singlinkvpn.com/)
+# SingLinkVPN Official Public Project
 
-星连VPN，真正 **免费试用** 的高速 VPN 软件。
-支持 **iOS / Android / Windows / macOS / Linux **，一键秒连，**全程加密、不留日志、不限流量**。
+[English](./README.md) · [繁體中文](./README.zh-Hant.md) · [简体中文](./README.zh-Hans.md) · [日本語](./README.ja.md) · [한국어](./README.ko.md) · [Tiếng Việt](./README.vi.md) · [ไทย](./README.th.md) · [Русский](./README.ru.md)
 
-## 📥 下载地址
+![SingLinkVPN official public project](./assets/singlinkvpn-public-project.png)
 
-* 📱 **iOS 安装包**：[App Store 下载](https://apps.apple.com/ca/app/hiddify-proxy-vpn/id6596777532)
-* 📱 **Android 安装包**：[点击下载](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-Android.apk)
-* 💻 **Windows 安装包**：[点击下载](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN_Windows%20_Setup.exe)
-* 🍎 **macOS 安装包 (M 芯片)**：[点击下载](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS-%28M%E8%8A%AF%E7%89%87%29.pkg)
-* 🍎 **macOS 安装包 (Intel 芯片)**：[点击下载](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS%28Inter%E8%8A%AF%E7%89%87%29.pkg)
-* 🌍 **用户仪表盘**：[立即进入](https://dashboard.singlinkvpn.com/)
-* 🌍 **官方网站**：[立即进入](https://singlinkvpn.com/)
+Official links, current product facts, verifiable security and privacy evidence, protocol status, and the public open-source roadmap.
 
-### 🎁 交流社群
+## About this repository
 
-* [Telegram 交流社群](https://t.me/singlink1688)
+This is SingLinkVPN's official public project and evidence index. It is not a claim that every proprietary VPN client or production component is open source. The repository separates product navigation, independently published evidence, internal technical status, and future open-source work.
 
-### ⚡️ 如部分地区无法打开官网，可尝试以下下载地址👇：
+- [Official website](https://singlinkvpn.com/)
+- [News and technical center](https://singlinknews.com/)
+- [Official changelog](https://singlinkvpn.com/en/tech/changelog/)
+- [Support](https://github.com/SingLinkLabs/SingLinkVPN/issues)
 
-* [下载地址1](https://singlink.cc)
-* [下载地址2](https://singlink02.com)
+## Stable download routes
 
+Use the official platform pages for the latest compatible installers and instructions. Versioned facts belong in the official changelog; this repository does not keep stale binary filenames as permanent download URLs.
 
-## 🌟 产品特点
+- [All-platform downloads](https://singlinkvpn.com/en/download/)
+- [iOS](https://singlinkvpn.com/en/download/ios/)
+- [Android](https://singlinkvpn.com/en/download/android/)
+- [Windows](https://singlinkvpn.com/en/download/windows/)
+- [macOS](https://singlinkvpn.com/en/download/macos/)
+- [Linux](https://singlinkvpn.com/en/download/linux/)
+- [Apple TV](https://singlinkvpn.com/en/download/tv/)
 
-* 🚀 **自主研发「SingLink」协议**：跨境访问速度提升 300%+
-* 🌍 **全球 100+ 高速服务期**，单节点最高可达 2000Mbps
-* 🔒 **AES-256 军工级加密**，严格无日志政策防追踪
-* 📱 **全平台支持**：iOS / Android / Windows / macOS / Linux 
-* 🎁 **免费试用**，无需充值即可体验，满意再订阅
+## Free Plan
 
-![星连VPN](https://pbs.twimg.com/media/Gvb6diGXsAAIS6F?format=png&name=900x900)
+The current published Free Plan provides 200 MB per day on mobile and 500 MB per day on desktop. Eligible desktop campaigns may raise the daily amount to 1 GB. Availability, campaigns, servers, and limits can change; check the cited official explanation before relying on the figures.
 
+- [Free Plan](https://singlinknews.com/free-plan)
 
-# 🌐 [SingLinkVPN](https://sg.singlinkvpn.com/)
+## Security and privacy evidence
 
-SingLinkVPN is a truly **free-to-try** high-speed cross-border VPN.
-Supports **iOS / Android / Windows / macOS / Linux / Web** with one-click connection, **no logs, full encryption, unlimited bandwidth**.
+### Desktop 2.5 security audit
 
-## 📥 Download Links
+The dedicated evidence registry records the auditor's signed version 2.0 report for macOS 2.5.7 build 3065 and Windows 2.5.8 build 3077. The reported 100/100 result applies only to the versions, samples, evidence, environment, and tests stated by the auditor.
 
-* 📱 **iOS App**: [App Store](https://apps.apple.com/ca/app/hiddify-proxy-vpn/id6596777532)
-* 📱 **Android App**: [Download](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-Android.apk)
-* 💻 **Windows App**: [Download](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN_Windows%20_Setup.exe)
-* 🍎 **macOS App (M Chip)**: [Download](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS-%28M%E8%8A%AF%E7%89%87%29.pkg)
-* 🍎 **macOS App (Intel Chip)**: [Download](https://download.singlinkvpn.com/%E6%98%9F%E8%BF%9EVPN-MacOS%28Inter%E8%8A%AF%E7%89%87%29.pkg)
-* 🌍 **Dashboard**: [Log in](https://dashboard.singlinkvpn.com/)
-* 🌍 **Offcial Website**: [Log in](https://singlinkvpn.com/)
+- [Security-audit evidence](https://github.com/SingLinkLabs/singlinkvpn-security-audit)
+- [Security-audit evidence · Pages](https://singlinklabs.github.io/singlinkvpn-security-audit/)
 
-### 🎁 Telegram Group:
+### 2026 no-logs verification
 
-* [Telegram Group](https://t.me/singlinkvpn_en)
+The dedicated registry records the signed no-logs verification with a 29 July 2026 reference date. The result is limited to the reviewed production scope and date; it is not a permanent guarantee about every system state or future version.
 
-### ⚡️ Try it if some area can't open the offcial website👇：
+- [No-logs evidence](https://github.com/SingLinkLabs/singlinkvpn-no-logs-report)
+- [No-logs evidence · Pages](https://singlinklabs.github.io/singlinkvpn-no-logs-report/)
 
-* [Download 1](https://singlink.cc)
-* [Download 2](https://singlink02.com)
+## Protocol status
 
+Sola is SingLink's next-generation VPN transport protocol rebuilt from the SingLink 2.0 architecture. Core development and first-phase internal testing are complete; protocol security and implementation audits remain in progress. Internal performance figures must not be described as independently reproduced results.
 
-## 🌟 Features
+- [Sola protocol](https://singlinknews.com/sola-protocol)
 
-* 🚀 **Self-developed “SingLink” protocol**: boosts cross-border speed by 300%+
-* 🌍 **100+ global high-speed nodes**, up to 2000Mbps per node
-* 🔒 **AES-256 military-grade encryption**, strict no-log policy
-* 📱 **All-platform support**: iOS / Android / Windows / macOS / Linux / Web
-* 🎁 **Free trial** – no upfront payment required
+## Open-source status
 
-![SingLinkVPN](https://pbs.twimg.com/media/Gvb6diGXsAAIS6F?format=png&name=900x900)
+SingLinkVPN is publishing documentation, evidence, research data, and code in phases. Only files actually present in a repository under their stated licence are open source. Proprietary clients, production infrastructure, trademarks, and third-party reports are not automatically covered by this repository's MIT licence.
 
+- [Open-source plan](https://singlinknews.com/singlink-vpn-open-source-plan)
+
+## Verification and updates
+
+Machine-readable project data, source links, release dates, and automated checks are included so readers can reproduce the repository's public claims. Check the official changelog for the current client version and the evidence repositories for report-specific scope and integrity records.
+
+```sh
+npm test
+npm run verify:remote
+```
+
+- [Machine-readable project record](./metadata/project.json)
+- [Citation metadata](./CITATION.cff)
+- [Security policy](./SECURITY.md)
+- [Rights and licence boundary](./RIGHTS.md)
+
+## Evidence boundary
+
+Public metadata can improve discovery and verification, but it does not guarantee indexing, rankings, backlinks, or citation by an AI system. Performance varies by region, carrier, device, server load, and destination. Security findings remain limited to each report's stated scope.
+
+**Last verified: 2026-08-25.**

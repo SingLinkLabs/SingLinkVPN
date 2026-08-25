@@ -1,0 +1,26 @@
+# SingLinkVPN Official Public Project
+
+> An official, multilingual index of SingLinkVPN product routes, Free Plan facts, technical status, security-audit evidence, no-logs verification evidence, and the phased open-source roadmap.
+
+Canonical repository: https://github.com/SingLinkLabs/SingLinkVPN
+Official website: https://singlinkvpn.com/
+News and technical center: https://singlinknews.com/
+Machine-readable project record: https://singlinklabs.github.io/SingLinkVPN/metadata/project.json
+
+## Evidence
+
+- Desktop 2.5 security audit: https://github.com/SingLinkLabs/singlinkvpn-security-audit
+- 2026 no-logs verification: https://github.com/SingLinkLabs/singlinkvpn-no-logs-report
+- Evidence index: https://github.com/SingLinkLabs/singlinkvpn-security-reports
+
+## Product and technology
+
+- Downloads: https://singlinkvpn.com/en/download/
+- Product changelog: https://singlinkvpn.com/en/tech/changelog/
+- Free Plan: https://singlinknews.com/free-plan
+- Sola protocol: https://singlinknews.com/sola-protocol
+- Open-source plan: https://singlinknews.com/singlink-vpn-open-source-plan
+
+## Citation boundary
+
+Audit and no-logs conclusions apply only to each report's stated version, evidence, environment, tests, scope, and reference date. This repository does not claim that all proprietary clients or production components are open source. Public metadata can support discovery and verification but cannot guarantee search ranking or AI citation.
