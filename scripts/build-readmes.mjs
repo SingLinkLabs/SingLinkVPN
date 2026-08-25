@@ -26,11 +26,13 @@ const languageNames = {
   ru: 'Русский',
 };
 
+const coverPaths = Object.fromEntries(locales.map((locale) => [locale, `./assets/covers/${locale}.png`]));
+
 function nav() {
   return locales.map((locale) => `[${languageNames[locale]}](./${filenames[locale]})`).join(' · ');
 }
 
-function readme(copy) {
+function readme(copy, locale) {
   const platformLinks = project.platforms
     .map(({ name, url }) => `- [${name}](${url})`)
     .join('\n');
@@ -38,7 +40,7 @@ function readme(copy) {
 
 ${nav()}
 
-![SingLinkVPN official public project](./assets/singlinkvpn-public-project.png)
+![${copy.coverTitle}](${coverPaths[locale]})
 
 ${copy.hero}
 
@@ -106,9 +108,9 @@ npm run verify:remote
 - [Security policy](./SECURITY.md)
 - [Rights and licence boundary](./RIGHTS.md)
 
-## ${copy.limitsTitle}
+## ${copy.trustTitle}
 
-${copy.limits}
+${copy.trust}
 
 **${copy.labels.lastVerified}: ${project.lastVerified}.**
 `;
@@ -116,7 +118,7 @@ ${copy.limits}
 
 for (const locale of locales) {
   const copy = JSON.parse(await readFile(path.join(root, `metadata/locales/${locale}.json`), 'utf8'));
-  await writeFile(path.join(root, filenames[locale]), readme(copy), 'utf8');
+  await writeFile(path.join(root, filenames[locale]), readme(copy, locale), 'utf8');
 }
 
 console.log(`Built ${locales.length} complete localized README files.`);

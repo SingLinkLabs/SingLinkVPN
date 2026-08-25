@@ -1,6 +1,14 @@
 # Changelog
 
-This changelog covers the public project repository, not SingLinkVPN client releases. See the [official product changelog](https://singlinkvpn.com/en/tech/changelog/) for client versions.
+This changelog covers the SingLinkVPN GitHub project. The [official product changelog](https://singlinkvpn.com/en/tech/changelog/) provides client release history.
+
+## 1.1.0 — 2026-08-26
+
+- Positioned SingLinkVPN as a free VPN with open-source VPN tools and projects.
+- Rewrote all eight languages with direct, positive product information.
+- Added localized social and README cover images.
+- Added a free Offer to SoftwareApplication structured data.
+- Expanded automated checks for positive positioning, keyword quality and localized assets.
 
 ## 1.0.0 — 2026-08-25
 

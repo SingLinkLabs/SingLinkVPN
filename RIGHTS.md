@@ -1,15 +1,14 @@
-# Rights and licence boundary
+# Rights and licences
 
-The MIT licence in [LICENSE](./LICENSE) applies only to original repository files that SingLinkLabs has the right to license under those terms, including the repository's original documentation, scripts, metadata schema, and generated project pages.
+The [MIT licence](./LICENSE) covers the original documentation, scripts, metadata schema and generated project pages published by SingLinkLabs in this repository.
 
-It does not automatically apply to:
+Separate rights information accompanies these materials:
 
-- SingLinkVPN proprietary client applications, backend services, production infrastructure, or installer binaries;
-- the SingLinkVPN, SingLink, and related names, logos, characters, product appearance, or other trademarks and brand assets;
-- third-party audit reports, attestations, signatures, certificates, screenshots, videos, quotations, or research material;
-- content reached through external links; or
-- personal data, credentials, or confidential operational information.
+- SingLinkVPN client applications, backend services, production infrastructure and installer binaries;
+- SingLinkVPN and SingLink names, logos, characters, product appearance and brand assets;
+- third-party audit reports, attestations, signatures, certificates, screenshots, videos, quotations and research material;
+- content available through external links.
 
-Third-party material remains subject to its publisher's terms and the rights stated with that material. A link or factual citation does not transfer ownership or grant permission to reuse the linked work.
+Third-party material follows the publisher terms and rights information displayed with that material. Factual citations link readers to the original publisher.
 
-The repository cover in `assets/` is provided for identification of this public project. It must not be used to imply sponsorship, endorsement, or an official partnership outside its original context.
+Repository covers in `assets/` identify the official SingLinkVPN free VPN and open-source project pages.

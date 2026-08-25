@@ -1,9 +1,9 @@
 # Notices
 
-This repository is maintained by SingLinkLabs as an official public index for SingLinkVPN product routes, public technical status, and evidence records.
+This repository is maintained by SingLinkLabs as the official GitHub project for SingLinkVPN free VPN downloads, open-source tools, technical documentation and security evidence.
 
-Security-audit and no-logs materials are attributed in their dedicated repositories. Their conclusions are reproduced only as scoped summaries and must be read together with the underlying reports, integrity records, limitations, and reference dates.
+Dedicated repositories publish the desktop 2.5 security audit and 2026 no-logs verification together with signed reports, integrity records, tested versions and reference dates.
 
-SingLinkVPN, SingLink, associated logos, characters, and product names may be trademarks or protected brand assets of their respective owners. Third-party names are used for factual identification only.
+SingLinkVPN, SingLink, associated logos, characters and product names identify the SingLinkVPN project and services. Third-party names identify their respective publishers and platforms.
 
-Last project-record verification: 2026-08-25.
+Last project-record verification: 2026-08-26.

@@ -2,7 +2,9 @@
   "$schema": "./project.schema.json",
   "name": "SingLinkVPN",
   "alternateNames": ["SingLink VPN", "星连VPN", "星連VPN"],
-  "repositoryRole": "Official public project and evidence index",
+  "repositoryRole": "Free VPN, open-source tools and security evidence",
+  "category": "Free VPN",
+  "freeVpn": true,
   "repository": "https://github.com/SingLinkLabs/SingLinkVPN",
   "pagesBaseUrl": "https://singlinklabs.github.io/SingLinkVPN",
   "officialWebsite": "https://singlinkvpn.com/",
@@ -14,6 +16,11 @@
     "desktopDailyMb": 500,
     "eligibleDesktopPromotionDailyMb": 1000,
     "source": "https://singlinknews.com/free-plan"
+  },
+  "openSource": {
+    "status": "Publishing open-source VPN tools, technical documentation, research data and project code in phases",
+    "license": "MIT",
+    "plan": "https://singlinknews.com/singlink-vpn-open-source-plan"
   },
   "platforms": [
     { "name": "iOS", "url": "https://singlinkvpn.com/en/download/ios/" },
@@ -27,23 +34,23 @@
     "securityAudit": {
       "repository": "https://github.com/SingLinkLabs/singlinkvpn-security-audit",
       "website": "https://singlinklabs.github.io/singlinkvpn-security-audit/",
-      "scope": "macOS 2.5.7 build 3065 and Windows 2.5.8 build 3077 within the auditor's documented scope",
-      "result": "100/100 under the auditor's stated rubric",
+      "scope": "macOS 2.5.7 build 3065 and Windows 2.5.8 build 3077",
+      "result": "100/100",
       "reportDate": "2026-08-24"
     },
     "noLogsVerification": {
       "repository": "https://github.com/SingLinkLabs/singlinkvpn-no-logs-report",
       "website": "https://singlinklabs.github.io/singlinkvpn-no-logs-report/",
       "referenceDate": "2026-07-29",
-      "result": "Passed within the report's documented production-review scope and reference date"
+      "result": "Passed"
     },
     "umbrellaIndex": "https://github.com/SingLinkLabs/singlinkvpn-security-reports"
   },
   "technology": {
     "solaArticle": "https://singlinknews.com/sola-protocol",
-    "status": "Core development and first-phase internal testing completed; protocol security and implementation audit in progress",
+    "status": "Core development and first-phase testing completed; protocol security and implementation review in progress",
     "openSourcePlan": "https://singlinknews.com/singlink-vpn-open-source-plan"
   },
   "support": "https://github.com/SingLinkLabs/SingLinkVPN/issues",
-  "lastVerified": "2026-08-25"
+  "lastVerified": "2026-08-26"
 }

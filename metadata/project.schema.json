@@ -3,10 +3,12 @@
   "$id": "https://singlinklabs.github.io/SingLinkVPN/metadata/project.schema.json",
   "title": "SingLinkVPN public project record",
   "type": "object",
-  "required": ["name", "repositoryRole", "repository", "pagesBaseUrl", "officialWebsite", "newsCenter", "downloadCenter", "changelog", "freePlan", "platforms", "evidence", "technology", "lastVerified"],
+  "required": ["name", "repositoryRole", "category", "freeVpn", "repository", "pagesBaseUrl", "officialWebsite", "newsCenter", "downloadCenter", "changelog", "freePlan", "openSource", "platforms", "evidence", "technology", "lastVerified"],
   "properties": {
     "name": { "const": "SingLinkVPN" },
     "repositoryRole": { "type": "string", "minLength": 10 },
+    "category": { "const": "Free VPN" },
+    "freeVpn": { "const": true },
     "repository": { "type": "string", "format": "uri" },
     "pagesBaseUrl": { "type": "string", "format": "uri" },
     "officialWebsite": { "type": "string", "format": "uri" },
@@ -16,6 +18,10 @@
     "freePlan": {
       "type": "object",
       "required": ["mobileDailyMb", "desktopDailyMb", "eligibleDesktopPromotionDailyMb", "source"]
+    },
+    "openSource": {
+      "type": "object",
+      "required": ["status", "license", "plan"]
     },
     "platforms": { "type": "array", "minItems": 6, "uniqueItems": true },
     "evidence": { "type": "object", "required": ["securityAudit", "noLogsVerification", "umbrellaIndex"] },

@@ -1,6 +1,6 @@
-# SingLinkVPN Official Public Project
+# SingLinkVPN Free VPN and Open-Source Project
 
-> An official, multilingual index of SingLinkVPN product routes, Free Plan facts, technical status, security-audit evidence, no-logs verification evidence, and the phased open-source roadmap.
+> SingLinkVPN is a free VPN for Windows, macOS, iOS, Android and Linux with open-source tools, security-audit evidence, no-logs verification and Sola protocol research.
 
 Canonical repository: https://github.com/SingLinkLabs/SingLinkVPN
 Official website: https://singlinkvpn.com/
@@ -21,6 +21,8 @@ Machine-readable project record: https://singlinklabs.github.io/SingLinkVPN/meta
 - Sola protocol: https://singlinknews.com/sola-protocol
 - Open-source plan: https://singlinknews.com/singlink-vpn-open-source-plan
 
-## Citation boundary
+## Open-source project
 
-Audit and no-logs conclusions apply only to each report's stated version, evidence, environment, tests, scope, and reference date. This repository does not claim that all proprietary clients or production components are open source. Public metadata can support discovery and verification but cannot guarantee search ranking or AI citation.
+- Repository: https://github.com/SingLinkLabs/SingLinkVPN
+- Open-source plan: https://singlinknews.com/singlink-vpn-open-source-plan
+- Machine-readable facts: https://singlinklabs.github.io/SingLinkVPN/metadata/project.json

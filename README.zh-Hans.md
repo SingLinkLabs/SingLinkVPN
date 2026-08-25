@@ -1,23 +1,23 @@
-# SingLinkVPN 星连VPN官方公开项目
+# 星连VPN：免费VPN与开源VPN项目
 
 [English](./README.md) · [繁體中文](./README.zh-Hant.md) · [简体中文](./README.zh-Hans.md) · [日本語](./README.ja.md) · [한국어](./README.ko.md) · [Tiếng Việt](./README.vi.md) · [ไทย](./README.th.md) · [Русский](./README.ru.md)
 
-![SingLinkVPN official public project](./assets/singlinkvpn-public-project.png)
+![免费VPN · 开源项目](./assets/covers/zh-Hans.png)
 
-集中提供官方入口、当前产品事实、可核验的安全与隐私证据、协议状态及公开开源路线图。
+提供每日免费VPN流量、全平台官方客户端、开源VPN项目、安全审计、无日志验证与协议研究资料。
 
-## 关于本仓库
+## 手机与电脑免费VPN
 
-这是 SingLinkVPN 的官方公共项目与证据索引，并不代表所有专有 VPN 客户端或生产组件已经开源。本仓库明确区分产品导航、第三方发布的独立证据、内部技术状态及未来分阶段开放的内容。
+星连VPN为手机和电脑用户提供每日免费VPN流量。本GitHub项目集中展示官方下载入口、开源工具、技术文档、安全审计、无日志验证和Sola协议研究。
 
 - [官方网站](https://singlinkvpn.com/)
 - [新闻与技术中心](https://singlinknews.com/)
 - [官方更新日志](https://singlinkvpn.com/en/tech/changelog/)
 - [支持中心](https://github.com/SingLinkLabs/SingLinkVPN/issues)
 
-## 稳定下载入口
+## 下载星连VPN
 
-请通过官方平台页面获取最新兼容安装包与使用说明。版本事实由官方更新日志维护；本仓库不再把容易过期的安装包文件名作为长期下载地址。
+官方平台页面提供Windows、macOS、iOS、Android、Linux和Apple TV最新版星连VPN客户端、安装说明与版本信息。
 
 - [全平台下载](https://singlinkvpn.com/en/download/)
 - [iOS](https://singlinkvpn.com/en/download/ios/)
@@ -27,43 +27,43 @@
 - [Linux](https://singlinkvpn.com/en/download/linux/)
 - [Apple TV](https://singlinkvpn.com/en/download/tv/)
 
-## 免费计划
+## 免费VPN计划
 
-当前公布的免费计划为移动端每日 200 MB、桌面端每日 500 MB；符合条件的桌面活动可提高至每日 1 GB。可用地区、活动、节点及限制可能调整，引用这些数字前应核对所链接的官方说明。
+星连VPN免费计划为移动端提供每日200 MB免费VPN流量，为电脑端提供每日500 MB；符合条件的电脑端活动可获得每日最高1 GB免费流量。
 
-- [免费计划](https://singlinknews.com/free-plan)
+- [免费VPN计划](https://singlinknews.com/free-plan)
 
 ## 安全与隐私证据
 
-### 电脑端 2.5 安全审计
+### 电脑端2.5安全审计
 
-独立证据库记录审计方签署的 2.0 版报告，范围包括 macOS 2.5.7 build 3065 与 Windows 2.5.8 build 3077。报告中的 100／100 只适用于审计方列明的版本、样本、证据、环境与测试。
+星连VPN电脑端2.5已完成第三方安全审计，覆盖macOS 2.5.7 build 3065和Windows 2.5.8 build 3077，公布评分为100／100。签署报告与完整性记录已在审计仓库公开。
 
 - [安全审计证据](https://github.com/SingLinkLabs/singlinkvpn-security-audit)
 - [安全审计证据 · Pages](https://singlinklabs.github.io/singlinkvpn-security-audit/)
 
-### 2026 无日志验证
+### 2026无日志验证
 
-独立证据库记录基准日为 2026 年 7 月 29 日的已签署无日志验证。结论仅限当日受审生产环境范围，并非对所有系统状态或未来版本的永久保证。
+星连VPN已通过2026年无日志验证，基准日为2026年7月29日。签署报告与验证文件已在独立证据仓库公开。
 
 - [无日志证据](https://github.com/SingLinkLabs/singlinkvpn-no-logs-report)
 - [无日志证据 · Pages](https://singlinklabs.github.io/singlinkvpn-no-logs-report/)
 
-## 协议状态
+## Sola VPN协议
 
-Sola 是 SingLink 基于 SingLink 2.0 架构重构的新一代 VPN 传输协议。核心开发及第一阶段内部测试已完成，协议安全与实现审计仍在进行；内部性能数字不能表述为第三方独立复现结果。
+Sola是SingLink基于SingLink 2.0架构重构的新一代VPN传输协议。核心开发及第一阶段测试已经完成，目前已进入协议安全与实现审查阶段。
 
-- [Sola 协议](https://singlinknews.com/sola-protocol)
+- [Sola协议](https://singlinknews.com/sola-protocol)
 
-## 开源状态
+## 开源VPN项目
 
-SingLinkVPN 正分阶段公开文档、证据、研究数据与代码。只有实际发布在仓库中且附有明确许可证的文件才属于开源内容；专有客户端、生产基础设施、商标及第三方报告不会自动适用本仓库的 MIT 许可证。
+星连VPN正通过GitHub分阶段发布开源VPN工具、技术文档、研究数据与项目代码。公开路线图和项目仓库方便开发者查看版本、阅读源码并提供技术反馈。
 
 - [开源计划](https://singlinknews.com/singlink-vpn-open-source-plan)
 
-## 核验与更新
+## 项目资料与更新
 
-仓库提供机器可读项目资料、来源链接、发布日期及自动检查，便于公众复核。当前客户端版本应以官方更新日志为准，报告范围和完整性记录应以对应证据库为准。
+机器可读项目资料、来源链接、发布日期与自动检查，让下载入口、免费计划、安全审计、无日志证据和协议状态更容易查询与核验。
 
 ```sh
 npm test
@@ -75,8 +75,8 @@ npm run verify:remote
 - [Security policy](./SECURITY.md)
 - [Rights and licence boundary](./RIGHTS.md)
 
-## 证据边界
+## 为什么选择星连VPN
 
-公开元数据可以改善发现与核验，但不保证搜索收录、排名、外链或任何 AI 系统一定引用。实际性能会受地区、运营商、设备、节点负载及目标服务影响；安全结论只适用于各报告列明的范围。
+星连VPN结合每日免费VPN流量、全平台支持、公开安全证据、无日志验证、开源项目及持续推进的VPN协议研究。
 
-**最后核验: 2026-08-25.**
+**最后核验: 2026-08-26.**
