@@ -16,4 +16,5 @@ jobs:
       - uses: actions/setup-node@v7
         with:
           node-version: 24
+      - run: npm ci
       - run: npm run verify:remote

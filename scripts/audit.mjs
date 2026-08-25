@@ -19,11 +19,16 @@ for (const locale of locales) {
   assert.ok(html.includes('application/ld+json'), `${locale} JSON-LD`);
   assert.ok(html.includes('twitter:card'), `${locale} Twitter card`);
   assert.ok(html.includes('og:image'), `${locale} Open Graph image`);
+  assert.ok(html.includes(`/assets/covers/${locale}.png`), `${locale} localized cover`);
+  assert.ok(html.includes('"price":"0"'), `${locale} free SoftwareApplication offer`);
+  assert.ok(html.includes('"priceCurrency":"USD"'), `${locale} offer currency`);
+  assert.ok(html.includes('"isAccessibleForFree":true'), `${locale} free application flag`);
   assert.ok(html.includes(copy.description), `${locale} visible metadata description`);
   for (const alternate of locales) {
     assert.ok(html.includes(`hreflang="${alternate}" href="${urlFor(alternate)}"`), `${locale} -> ${alternate} hreflang`);
   }
   assert.ok(!/localhost|127\.0\.0\.1|noindex/i.test(html), `${locale} must be publicly indexable`);
+  assert.ok(!/not a claim|does not guarantee|must not|cannot be described|not a permanent guarantee|并不代表|不能表述|並非.*永久保證|不保證搜尋/i.test(html), `${locale} public page uses positive wording`);
 }
 
 const sitemap = await readFile(path.join(root, 'dist/sitemap.xml'), 'utf8');

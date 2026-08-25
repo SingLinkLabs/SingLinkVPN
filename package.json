@@ -1,13 +1,17 @@
 {
   "name": "singlinkvpn-public-project",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "scripts": {
+    "build:covers": "node scripts/build-covers.mjs",
     "build:readmes": "node scripts/build-readmes.mjs",
     "build:site": "node scripts/build-site.mjs",
     "audit": "node scripts/audit.mjs",
     "test": "node --test test/*.test.mjs && npm run build:readmes && npm run build:site && npm run audit",
     "verify:remote": "node scripts/verify-remote-links.mjs"
+  },
+  "devDependencies": {
+    "sharp": "0.35.3"
   }
 }
