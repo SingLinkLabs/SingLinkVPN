@@ -5,6 +5,7 @@ import sharp from 'sharp';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const output = path.join(root, 'assets/covers');
+const brandLogoPath = path.join(root, 'assets/brand/singlinkvpn-logo.png');
 const locales = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko', 'vi', 'th', 'ru'];
 
 const escapeXml = (value) => String(value)
@@ -14,7 +15,7 @@ const escapeXml = (value) => String(value)
   .replaceAll('"', '&quot;')
   .replaceAll("'", '&apos;');
 
-function coverSvg(copy, locale) {
+function coverSvg(copy, locale, brandLogoDataUri) {
   const titleSizes = { en: 62, 'zh-Hant': 72, 'zh-Hans': 72, ja: 46, ko: 58, vi: 50, th: 54, ru: 50 };
   const titleSize = titleSizes[locale];
   const subtitleSize = copy.coverSubtitle.length > 42 ? 29 : 34;
@@ -23,12 +24,14 @@ function coverSvg(copy, locale) {
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#020d06"/><stop offset="0.56" stop-color="#07301f"/><stop offset="1" stop-color="#185d48"/></linearGradient>
     <radialGradient id="glow" cx="82%" cy="14%" r="70%"><stop stop-color="#65e7c7" stop-opacity=".30"/><stop offset="1" stop-color="#65e7c7" stop-opacity="0"/></radialGradient>
     <filter id="shadow"><feDropShadow dx="0" dy="8" stdDeviation="12" flood-opacity=".28"/></filter>
+    <clipPath id="brandLogoClip"><rect x="110" y="110" width="76" height="76" rx="22"/></clipPath>
   </defs>
   <rect width="1600" height="900" fill="url(#bg)"/><rect width="1600" height="900" fill="url(#glow)"/>
   <g fill="none" stroke="#70d900" stroke-opacity=".18" stroke-width="2"><path d="M690 660c250-160 550-180 820-40"/><path d="M760 350c260-110 520-100 760 30"/><path d="M650 520c310-170 630-160 900 10"/></g>
   <g transform="translate(1120 218)" filter="url(#shadow)"><path d="M160 0l148 58v128c0 126-75 225-148 272C87 411 12 312 12 186V58z" fill="#082f23" stroke="#70dfc1" stroke-width="12"/><path d="M88 214l53 54 103-129" fill="none" stroke="#78df00" stroke-width="22" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <g transform="translate(110 118)"><rect width="62" height="72" rx="18" fill="#0b3528" stroke="#6fddc1" stroke-width="5"/><path d="M31 14l21 9v18c0 18-11 31-21 38-10-7-21-20-21-38V23z" fill="none" stroke="#80dc00" stroke-width="5"/><path d="M22 39l7 7 13-16" fill="none" stroke="#80dc00" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></g>
-  <text x="195" y="171" fill="#f5fff0" font-size="46" font-weight="800" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, Noto Sans, sans-serif">SingLinkVPN</text>
+  <image x="110" y="110" width="76" height="76" href="${brandLogoDataUri}" preserveAspectRatio="xMidYMid slice" clip-path="url(#brandLogoClip)"/>
+  <rect x="110" y="110" width="76" height="76" rx="22" fill="none" stroke="#6fddc1" stroke-width="3"/>
+  <text x="205" y="164" fill="#f5fff0" font-size="46" font-weight="800" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, Noto Sans, sans-serif">SingLinkVPN</text>
   <text x="110" y="390" fill="#f5fff0" font-size="${titleSize}" font-weight="800" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, Noto Sans, sans-serif">${escapeXml(copy.coverTitle)}</text>
   <text x="110" y="466" fill="#b8cfb3" font-size="${subtitleSize}" font-weight="500" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, Noto Sans, sans-serif">${escapeXml(copy.coverSubtitle)}</text>
   <g transform="translate(110 638)" font-family="Arial Unicode MS, PingFang SC, Noto Sans CJK SC, Noto Sans, sans-serif" font-size="25" font-weight="700"><rect width="202" height="58" rx="29" fill="#78df00"/><text x="101" y="38" fill="#071008" text-anchor="middle">FREE VPN</text><rect x="224" width="300" height="58" rx="29" fill="none" stroke="#6fddc1" stroke-width="3"/><text x="374" y="38" fill="#d9f5eb" text-anchor="middle">OPEN-SOURCE</text></g>
@@ -37,9 +40,14 @@ function coverSvg(copy, locale) {
 }
 
 await mkdir(output, { recursive: true });
+const brandLogo = await sharp(brandLogoPath)
+  .resize(152, 152, { fit: 'cover' })
+  .png({ quality: 94, compressionLevel: 9 })
+  .toBuffer();
+const brandLogoDataUri = `data:image/png;base64,${brandLogo.toString('base64')}`;
 for (const locale of locales) {
   const copy = JSON.parse(await readFile(path.join(root, `metadata/locales/${locale}.json`), 'utf8'));
-  const svg = coverSvg(copy, locale);
+  const svg = coverSvg(copy, locale, brandLogoDataUri);
   const svgPath = path.join(output, `${locale}.svg`);
   const pngPath = path.join(output, `${locale}.png`);
   await writeFile(svgPath, svg, 'utf8');
