@@ -26,6 +26,9 @@ test('project record contains stable, scoped facts', async () => {
 });
 
 test('all locale records are complete and distinct', async () => {
+  const brandLogo = await sharp(path.join(root, 'assets/brand/singlinkvpn-logo.png')).metadata();
+  assert.equal(brandLogo.width, 512, 'official brand logo width');
+  assert.equal(brandLogo.height, 512, 'official brand logo height');
   const titles = new Set();
   for (const locale of locales) {
     const copy = JSON.parse(await readFile(path.join(root, `metadata/locales/${locale}.json`), 'utf8'));
@@ -39,6 +42,9 @@ test('all locale records are complete and distinct', async () => {
     const coverMetadata = await sharp(path.join(root, `assets/covers/${locale}.png`)).metadata();
     assert.equal(coverMetadata.width, 1600, `${locale} cover width`);
     assert.equal(coverMetadata.height, 900, `${locale} cover height`);
+    const coverSvg = await readFile(path.join(root, `assets/covers/${locale}.svg`), 'utf8');
+    assert.match(coverSvg, /data:image\/png;base64,/, `${locale} cover embeds the official brand logo`);
+    assert.doesNotMatch(coverSvg, /translate\(110 118\)/, `${locale} cover removed the generic shield logo`);
     titles.add(copy.title);
   }
   assert.equal(titles.size, locales.length, 'titles must be localized');
