@@ -57,16 +57,16 @@ Sola는 SingLink 2.0 아키텍처를 재구성한 차세대 VPN 전송 프로토
 
 ## 오픈소스 VPN 프로젝트
 
-SingLinkVPN 오픈소스 프로젝트 2단계가 2026년 11월 12일에 공개되었습니다. 보안·개인정보·라이선스 검토를 거쳐 SingLinkLabs는 첫 제품 소스 코드를 Apache-2.0 저장소 두 곳에 공개했으며, 오픈소스 허브에서 두 저장소로 바로 이동할 수 있습니다.
+SingLinkVPN 오픈소스 프로젝트 2단계가 2026년 11월 12일에 공개되었습니다. 내부 보안 감사를 거쳐 SingLinkLabs는 1세대 SingLink 프로토콜과 1세대 SingLinkVPN 클라이언트를 Apache-2.0 저장소 두 곳에 공개했으며, 오픈소스 허브에서 두 저장소로 바로 이동할 수 있습니다.
 
-- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1은 Go로 처음부터 새로 작성한 오픈 프록시·VPN 프로토콜입니다(1.0 초안). 서명되고 기기에 바인딩된 액세스 패스, 내부 종단 간 암호화, X25519 + ML-KEM-768 하이브리드 양자 내성 키 교환, 재전송 공격 및 능동 탐지 방어를 갖추고 있습니다. 내부 보안 검토에서 31건이 발견되었고 High·Medium 등급은 모두 수정되었습니다.
-- **[SingLinkVPN 1세대 프로토타입 앱](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — SingLink Protocol을 기반으로 Flutter와 Go로 개발한 Windows, macOS, Android, iOS용 앱으로, 모바일에서는 기기 전체 VPN, 데스크톱에서는 시스템 프록시로 동작합니다. 이 1세대 프로토타입은 공식 다운로드 센터와 앱 스토어의 정식 앱과는 별개입니다.
+- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1은 Go로 처음부터 새로 작성한 1세대 SingLink 프로토콜입니다. 서명되고 기기에 바인딩된 액세스 패스, 내부 종단 간 암호화, X25519 + ML-KEM-768 하이브리드 양자 내성 키 교환, 재전송 공격 및 능동 탐지 방어를 갖추고 있습니다. 내부 보안 감사에서 31건이 발견되었고 High·Medium 등급은 모두 수정되었으며, 제3자 감사도 계획되어 있습니다.
+- **[SingLinkVPN 1세대 클라이언트](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — SingLink Protocol을 기반으로 Flutter와 Go로 개발한 Windows, macOS, Android, iOS용 클라이언트로, 모바일에서는 기기 전체 VPN, 데스크톱에서는 시스템 프록시로 동작합니다.
 - **[오픈소스 허브](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — 단계별 개요, 공개 문서, 연구 데이터, 보안 자료와 벤치마크를 한곳에 모은 중심 저장소입니다.
 
-SingLinkVPN 공식 앱, 서버, 결제, 노드와 SingLink 2.0 핵심 프로토콜은 계속 비공개 소스로 유지됩니다. 오픈 프로토콜은 내부 보안 검토를 마친 단계이며, 제3자 감사와 중국 본토 현장 테스트는 아직 진행되지 않았습니다. 보안 취약점은 각 저장소의 SECURITY.md에 따라 비공개로 제보해 주세요.
+최신 버전(SingLink 2.0 핵심과 현재 공식 앱)과 서버, 결제, 노드는 보안상의 이유로 아직 전부 공개되지 않았으며, 이번에는 보안 위험이 없는 코드만 공개했습니다. 오픈소스 계획은 계속되며, 보안 검토를 거쳐 다음 단계에서 더 많은 내용을 공개할 예정입니다. 보안 취약점은 각 저장소의 SECURITY.md에 따라 비공개로 제보해 주세요.
 
-- [공지: SingLink Protocol 오픈소스 공개](https://singlinkvpn.com/ko/blog/singlink-protocol-open-source/)
-- [공지: SingLinkVPN 프로토타입 앱 오픈소스 공개](https://singlinkvpn.com/ko/blog/singlinkvpn-app-open-source/)
+- [공지: 1세대 SingLink 프로토콜 오픈소스 공개](https://singlinkvpn.com/ko/blog/singlink-protocol-open-source/)
+- [공지: 1세대 SingLinkVPN 클라이언트 오픈소스 공개](https://singlinkvpn.com/ko/blog/singlinkvpn-app-open-source/)
 - [공식 웹사이트 오픈소스 페이지](https://singlinkvpn.com/ko/tech/open-source/)
 - [오픈소스 계획](https://singlinknews.com/singlink-vpn-open-source-plan)
 

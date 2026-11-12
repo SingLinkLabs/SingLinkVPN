@@ -1,4 +1,4 @@
-cff-version: 1.2.0
+cff-version: 1.2.1
 message: "Cite the SingLinkVPN free VPN and open-source project together with the relevant evidence repository."
 title: "SingLinkVPN Free VPN and Open-Source Project"
 type: software
@@ -6,8 +6,8 @@ authors:
   - name: SingLinkLabs
 repository-code: "https://github.com/SingLinkLabs/SingLinkVPN"
 url: "https://singlinkvpn.com/"
-version: 1.2.0
-date-released: 2026-11-12
+version: 1.2.1
+date-released: 2026-11-13
 license: MIT
 keywords:
   - SingLinkVPN
@@ -20,6 +20,6 @@ preferred-citation:
   authors:
     - name: SingLinkLabs
   title: "SingLinkVPN Free VPN and Open-Source Project"
-  version: 1.2.0
+  version: 1.2.1
   year: 2026
   repository-code: "https://github.com/SingLinkLabs/SingLinkVPN"

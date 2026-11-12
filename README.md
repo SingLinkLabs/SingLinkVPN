@@ -57,16 +57,16 @@ Sola is SingLink's next-generation VPN transport protocol rebuilt from the SingL
 
 ## Open-source VPN project
 
-Phase 2 of the SingLinkVPN open-source project was released on 12 November 2026. After security, privacy and licence review, SingLinkLabs published its first product source code in two Apache-2.0 repositories, and the open-source hub now links both.
+Phase 2 of the SingLinkVPN open-source project was released on 12 November 2026. After an internal security audit, SingLinkLabs published the first-generation SingLink protocol and the first-generation SingLinkVPN client in two Apache-2.0 repositories, and the open-source hub links both.
 
-- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1, an open proxy and VPN protocol written from scratch in Go (1.0 draft): signed, device-bound access passes, inner end-to-end encryption, hybrid X25519 + ML-KEM-768 post-quantum key exchange, and replay and active-probe resistance. An internal security review recorded 31 findings, and every High and Medium finding is fixed.
-- **[SingLinkVPN prototype app](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — Built with Flutter and Go on the SingLink Protocol for Windows, macOS, Android and iOS: a device-wide VPN on mobile and a system proxy on desktop. This first-generation prototype is separate from the official apps in the download center and app stores.
+- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1, the first-generation version of the SingLink protocol, written from scratch in Go: signed, device-bound access passes, inner end-to-end encryption, hybrid X25519 + ML-KEM-768 post-quantum key exchange, and replay and active-probe resistance. The internal security audit recorded 31 findings, every High and Medium finding is fixed, and a third-party audit is planned.
+- **[SingLinkVPN first-generation client](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — Built with Flutter and Go on the SingLink Protocol for Windows, macOS, Android and iOS: a device-wide VPN on mobile and a system proxy on desktop.
 - **[Open-source hub](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — Phase overview, public documentation, research data, security materials and benchmarks in one place.
 
-The official SingLinkVPN apps, servers, payment, nodes and the SingLink 2.0 core protocol remain closed source. The open protocol has completed an internal security review; it has not yet had a third-party audit or field testing in mainland China. Please report vulnerabilities privately as described in each repository's SECURITY.md.
+For security reasons, the latest versions (the SingLink 2.0 core and the current official apps), together with servers, payment and nodes, are not yet fully public, so this release includes only code that poses no security risk. The open-source plan continues, and later phases will publish more after security review. Please report vulnerabilities privately as described in each repository's SECURITY.md.
 
-- [Announcement: SingLink Protocol is open source](https://singlinkvpn.com/en/blog/singlink-protocol-open-source/)
-- [Announcement: SingLinkVPN prototype app is open source](https://singlinkvpn.com/en/blog/singlinkvpn-app-open-source/)
+- [Announcement: the first-generation SingLink protocol is open source](https://singlinkvpn.com/en/blog/singlink-protocol-open-source/)
+- [Announcement: the first-generation SingLinkVPN client is open source](https://singlinkvpn.com/en/blog/singlinkvpn-app-open-source/)
 - [Open source on the official website](https://singlinkvpn.com/en/tech/open-source/)
 - [Open-source plan](https://singlinknews.com/singlink-vpn-open-source-plan)
 

@@ -57,16 +57,16 @@ SolaはSingLink 2.0アーキテクチャを再構築した次世代VPN転送プ�
 
 ## オープンソースVPNプロジェクト
 
-SingLinkVPNオープンソースプロジェクトの第2段階を2026年11月12日に公開しました。セキュリティ、プライバシー、ライセンスの審査を経て、SingLinkLabsは最初の製品ソースコードを2つのApache-2.0リポジトリで公開し、オープンソースハブから両方にアクセスできるようにしました。
+SingLinkVPNオープンソースプロジェクトの第2段階を2026年11月12日に公開しました。社内セキュリティ監査を経て、SingLinkLabsは第1世代のSingLinkプロトコルと第1世代のSingLinkVPNクライアントを2つのApache-2.0リポジトリで公開し、オープンソースハブから両方にアクセスできるようにしました。
 
-- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1は、Goでゼロから書き起こしたオープンなプロキシ／VPNプロトコルです（1.0ドラフト）。署名付きでデバイスに紐づくアクセスパス、内側のエンドツーエンド暗号化、X25519 + ML-KEM-768のハイブリッド耐量子鍵交換、リプレイ攻撃とアクティブプローブへの耐性を備えています。社内セキュリティレビューでは31件の指摘があり、HighとMediumはすべて修正済みです。
-- **[SingLinkVPN 初代プロトタイプアプリ](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — FlutterとGoでSingLink Protocol上に構築した、Windows、macOS、Android、iOS対応のアプリです。モバイルではデバイス全体のVPN、デスクトップではシステムプロキシとして動作します。この初代プロトタイプは、公式ダウンロードセンターやアプリストアの公式アプリとは別のものです。
+- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1は第1世代のSingLinkプロトコルで、Goでゼロから書き起こしました。署名付きでデバイスに紐づくアクセスパス、内側のエンドツーエンド暗号化、X25519 + ML-KEM-768のハイブリッド耐量子鍵交換、リプレイ攻撃とアクティブプローブへの耐性を備えています。社内セキュリティ監査では31件の指摘があり、HighとMediumはすべて修正済みです。第三者監査も予定しています。
+- **[SingLinkVPN 第1世代クライアント](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — FlutterとGoでSingLink Protocol上に構築した、Windows、macOS、Android、iOS対応のクライアントです。モバイルではデバイス全体のVPN、デスクトップではシステムプロキシとして動作します。
 - **[オープンソースハブ](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — 各段階の概要、公開文書、研究データ、セキュリティ資料、ベンチマークをまとめた中心リポジトリです。
 
-SingLinkVPNの公式アプリ、サーバー、決済、ノード、SingLink 2.0のコアプロトコルは引き続きクローズドソースです。オープンプロトコルは社内セキュリティレビューを完了した段階で、第三者監査と中国本土での実地検証はまだ行っていません。脆弱性は各リポジトリのSECURITY.mdに従って非公開でご報告ください。
+最新版（SingLink 2.0のコアと現行の公式アプリ）とサーバー、決済、ノードは、セキュリティ上の理由からまだ完全には公開しておらず、今回はセキュリティ上のリスクがないコードのみを公開しました。オープンソース計画は今後も続き、セキュリティ審査を経て後続の段階で順次公開していきます。脆弱性は各リポジトリのSECURITY.mdに従って非公開でご報告ください。
 
-- [お知らせ：SingLink Protocolをオープンソース化](https://singlinkvpn.com/ja/blog/singlink-protocol-open-source/)
-- [お知らせ：SingLinkVPNプロトタイプアプリをオープンソース化](https://singlinkvpn.com/ja/blog/singlinkvpn-app-open-source/)
+- [お知らせ：第1世代SingLinkプロトコルをオープンソース化](https://singlinkvpn.com/ja/blog/singlink-protocol-open-source/)
+- [お知らせ：第1世代SingLinkVPNクライアントをオープンソース化](https://singlinkvpn.com/ja/blog/singlinkvpn-app-open-source/)
 - [公式サイトのオープンソースページ](https://singlinkvpn.com/ja/tech/open-source/)
 - [オープンソース計画](https://singlinknews.com/singlink-vpn-open-source-plan)
 

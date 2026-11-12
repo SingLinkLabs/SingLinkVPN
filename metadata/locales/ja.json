@@ -18,16 +18,16 @@
   "techTitle": "Sola VPNプロトコル",
   "tech": "SolaはSingLink 2.0アーキテクチャを再構築した次世代VPN転送プロトコルです。中核開発と第1段階の試験を完了し、プロトコルセキュリティと実装レビューの段階に進んでいます。",
   "openSourceTitle": "オープンソースVPNプロジェクト",
-  "openSource": "SingLinkVPNオープンソースプロジェクトの第2段階を2026年11月12日に公開しました。セキュリティ、プライバシー、ライセンスの審査を経て、SingLinkLabsは最初の製品ソースコードを2つのApache-2.0リポジトリで公開し、オープンソースハブから両方にアクセスできるようにしました。",
-  "openSourceProtocol": "SingLink/1は、Goでゼロから書き起こしたオープンなプロキシ／VPNプロトコルです（1.0ドラフト）。署名付きでデバイスに紐づくアクセスパス、内側のエンドツーエンド暗号化、X25519 + ML-KEM-768のハイブリッド耐量子鍵交換、リプレイ攻撃とアクティブプローブへの耐性を備えています。社内セキュリティレビューでは31件の指摘があり、HighとMediumはすべて修正済みです。",
-  "openSourceApp": "FlutterとGoでSingLink Protocol上に構築した、Windows、macOS、Android、iOS対応のアプリです。モバイルではデバイス全体のVPN、デスクトップではシステムプロキシとして動作します。この初代プロトタイプは、公式ダウンロードセンターやアプリストアの公式アプリとは別のものです。",
+  "openSource": "SingLinkVPNオープンソースプロジェクトの第2段階を2026年11月12日に公開しました。社内セキュリティ監査を経て、SingLinkLabsは第1世代のSingLinkプロトコルと第1世代のSingLinkVPNクライアントを2つのApache-2.0リポジトリで公開し、オープンソースハブから両方にアクセスできるようにしました。",
+  "openSourceProtocol": "SingLink/1は第1世代のSingLinkプロトコルで、Goでゼロから書き起こしました。署名付きでデバイスに紐づくアクセスパス、内側のエンドツーエンド暗号化、X25519 + ML-KEM-768のハイブリッド耐量子鍵交換、リプレイ攻撃とアクティブプローブへの耐性を備えています。社内セキュリティ監査では31件の指摘があり、HighとMediumはすべて修正済みです。第三者監査も予定しています。",
+  "openSourceApp": "FlutterとGoでSingLink Protocol上に構築した、Windows、macOS、Android、iOS対応のクライアントです。モバイルではデバイス全体のVPN、デスクトップではシステムプロキシとして動作します。",
   "openSourceHub": "各段階の概要、公開文書、研究データ、セキュリティ資料、ベンチマークをまとめた中心リポジトリです。",
-  "openSourceBoundary": "SingLinkVPNの公式アプリ、サーバー、決済、ノード、SingLink 2.0のコアプロトコルは引き続きクローズドソースです。オープンプロトコルは社内セキュリティレビューを完了した段階で、第三者監査と中国本土での実地検証はまだ行っていません。脆弱性は各リポジトリのSECURITY.mdに従って非公開でご報告ください。",
+  "openSourceBoundary": "最新版（SingLink 2.0のコアと現行の公式アプリ）とサーバー、決済、ノードは、セキュリティ上の理由からまだ完全には公開しておらず、今回はセキュリティ上のリスクがないコードのみを公開しました。オープンソース計画は今後も続き、セキュリティ審査を経て後続の段階で順次公開していきます。脆弱性は各リポジトリのSECURITY.mdに従って非公開でご報告ください。",
   "verifyTitle": "プロジェクト情報と更新",
   "verify": "機械可読なプロジェクト情報、出典リンク、公開日、自動検査により、ダウンロード、無料プラン、監査証拠、プロトコル状況を簡単に検索して確認できます。",
   "trustTitle": "SingLinkVPNが選ばれる理由",
   "trust": "毎日の無料VPNデータ、幅広いプラットフォーム対応、公開セキュリティ証拠、ノーログ検証、オープンソースプロジェクト、VPNプロトコル研究を一つにまとめています。",
   "coverTitle": "無料VPN・オープンソースプロジェクト",
   "coverSubtitle": "ダウンロード・セキュリティ監査・ノーログ検証",
-  "labels": {"officialWebsite":"公式サイト","newsCenter":"ニュース・技術センター","downloadCenter":"全プラットフォーム版","changelog":"公式変更履歴","securityRepo":"セキュリティ監査証拠","noLogsRepo":"ノーログ証拠","sola":"Solaプロトコル","openSource":"オープンソース計画","support":"サポート","lastVerified":"最終確認","protocolRepo":"SingLink Protocol","appRepo":"SingLinkVPN 初代プロトタイプアプリ","hubRepo":"オープンソースハブ","protocolArticle":"お知らせ：SingLink Protocolをオープンソース化","appArticle":"お知らせ：SingLinkVPNプロトタイプアプリをオープンソース化","openSourcePage":"公式サイトのオープンソースページ"}
+  "labels": {"officialWebsite":"公式サイト","newsCenter":"ニュース・技術センター","downloadCenter":"全プラットフォーム版","changelog":"公式変更履歴","securityRepo":"セキュリティ監査証拠","noLogsRepo":"ノーログ証拠","sola":"Solaプロトコル","openSource":"オープンソース計画","support":"サポート","lastVerified":"最終確認","protocolRepo":"SingLink Protocol","appRepo":"SingLinkVPN 第1世代クライアント","hubRepo":"オープンソースハブ","protocolArticle":"お知らせ：第1世代SingLinkプロトコルをオープンソース化","appArticle":"お知らせ：第1世代SingLinkVPNクライアントをオープンソース化","openSourcePage":"公式サイトのオープンソースページ"}
 }

@@ -2,9 +2,14 @@
 
 This changelog covers the SingLinkVPN GitHub project. The [official product changelog](https://singlinkvpn.com/en/tech/changelog/) provides client release history.
 
+## 1.2.1 — 2026-11-13
+
+- Updated the open-source wording in all eight languages: the release is the first-generation SingLink protocol and the first-generation SingLinkVPN client, published after an internal security audit; the latest versions stay closed for security reasons for now, and the open-source plan continues in later phases.
+- Replaced the retired Free Plan and Apple TV links with the official pricing page (per language) and `/download/appletv/`.
+
 ## 1.2.0 — 2026-11-12
 
-- Announced open-source phase 2 in all eight READMEs and on the generated Pages: the SingLink Protocol (`SingLink/1`, 1.0 draft) and the SingLinkVPN first-generation prototype app, both Apache-2.0.
+- Announced open-source phase 2 in all eight READMEs and on the generated Pages: the SingLink Protocol (`SingLink/1`, 1.0 draft) and the SingLinkVPN first-generation client, both Apache-2.0.
 - Linked the two new repositories, the open-source hub, the localized announcement articles and the official open-source page.
 - Stated the closed-source boundary: official apps, servers, payment, nodes and the SingLink 2.0 core protocol.
 - Added open-source repositories, phase and release date to `metadata/project.json`, its schema, `llms.txt` and `docs/open-source-status.md`.
