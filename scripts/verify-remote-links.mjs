@@ -19,6 +19,10 @@ const urls = new Set([
   project.evidence.umbrellaIndex,
   project.technology.solaArticle,
   project.technology.openSourcePlan,
+  project.openSource.hub,
+  ...project.openSource.repositories.map(({ repository }) => repository),
+  ...Object.values(project.openSource.websiteLocales).flatMap((locale) =>
+    Object.values(project.openSource.announcements).map((url) => url.replace('{locale}', locale))),
 ]);
 
 const failures = [];

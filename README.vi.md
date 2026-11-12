@@ -57,8 +57,17 @@ Sola là giao thức truyền VPN thế hệ mới được tái cấu trúc t�
 
 ## Dự án VPN mã nguồn mở
 
-SingLinkVPN đang phát hành theo từng giai đoạn các công cụ VPN mã nguồn mở, tài liệu kỹ thuật, dữ liệu nghiên cứu và mã dự án trên GitHub. Lộ trình và kho công khai giúp theo dõi bản phát hành, đọc mã nguồn và gửi phản hồi kỹ thuật.
+Giai đoạn 2 của dự án mã nguồn mở SingLinkVPN đã được phát hành ngày 12 tháng 11 năm 2026. Sau khi rà soát bảo mật, quyền riêng tư và giấy phép, SingLinkLabs đã công bố mã nguồn sản phẩm đầu tiên trong hai kho Apache-2.0, và kho tổng hợp mã nguồn mở hiện liên kết đến cả hai.
 
+- **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1 là giao thức proxy và VPN mở được viết mới hoàn toàn bằng Go (bản nháp 1.0): thẻ truy cập có chữ ký và gắn với thiết bị, mã hóa đầu cuối ở lớp trong, trao đổi khóa hậu lượng tử lai X25519 + ML-KEM-768, chống phát lại và chống dò quét chủ động. Đợt rà soát bảo mật nội bộ ghi nhận 31 phát hiện, toàn bộ phát hiện mức High và Medium đã được khắc phục.
+- **[Ứng dụng nguyên mẫu SingLinkVPN](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — Xây dựng bằng Flutter và Go trên SingLink Protocol cho Windows, macOS, Android và iOS: VPN toàn thiết bị trên di động và proxy hệ thống trên máy tính. Bản nguyên mẫu thế hệ đầu này tách biệt với ứng dụng chính thức trong trung tâm tải xuống và các cửa hàng ứng dụng.
+- **[Kho tổng hợp mã nguồn mở](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — Tổng quan từng giai đoạn, tài liệu công khai, dữ liệu nghiên cứu, tài liệu bảo mật và kết quả đo hiệu năng được tập hợp tại một nơi.
+
+Ứng dụng chính thức, máy chủ, thanh toán, nút mạng và lõi giao thức SingLink 2.0 của SingLinkVPN vẫn là mã nguồn đóng. Giao thức mở đã hoàn tất rà soát bảo mật nội bộ, nhưng chưa được bên thứ ba kiểm toán và chưa được thử nghiệm thực tế tại Trung Quốc đại lục. Vui lòng báo cáo lỗ hổng một cách riêng tư theo hướng dẫn trong SECURITY.md của từng kho.
+
+- [Thông báo: SingLink Protocol chính thức mở mã nguồn](https://singlinkvpn.com/vi/blog/singlink-protocol-open-source/)
+- [Thông báo: ứng dụng nguyên mẫu SingLinkVPN chính thức mở mã nguồn](https://singlinkvpn.com/vi/blog/singlinkvpn-app-open-source/)
+- [Trang mã nguồn mở trên website chính thức](https://singlinkvpn.com/vi/tech/open-source/)
 - [Kế hoạch mã nguồn mở](https://singlinknews.com/singlink-vpn-open-source-plan)
 
 ## Dữ liệu dự án và cập nhật

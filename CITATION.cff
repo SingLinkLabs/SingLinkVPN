@@ -6,8 +6,8 @@ authors:
   - name: SingLinkLabs
 repository-code: "https://github.com/SingLinkLabs/SingLinkVPN"
 url: "https://singlinkvpn.com/"
-version: 1.1.0
-date-released: 2026-08-26
+version: 1.2.0
+date-released: 2026-11-12
 license: MIT
 keywords:
   - SingLinkVPN
@@ -20,6 +20,6 @@ preferred-citation:
   authors:
     - name: SingLinkLabs
   title: "SingLinkVPN Free VPN and Open-Source Project"
-  version: 1.1.0
+  version: 1.2.0
   year: 2026
   repository-code: "https://github.com/SingLinkLabs/SingLinkVPN"

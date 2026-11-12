@@ -24,6 +24,9 @@ const escapeHtml = (value) => String(value)
   .replaceAll('"', '&quot;')
   .replaceAll("'", '&#39;');
 
+const [protocolRepo, appRepo] = project.openSource.repositories;
+const announcement = (key, locale) =>
+  project.openSource.announcements[key].replace('{locale}', project.openSource.websiteLocales[locale]);
 const routeFor = (locale) => locale === 'en' ? '/' : `/${locale}/`;
 const urlFor = (locale) => `${project.pagesBaseUrl}${routeFor(locale)}`;
 const coverUrlFor = (locale) => `${project.pagesBaseUrl}/assets/covers/${locale}.png`;
@@ -90,6 +93,8 @@ function page(copy, locale) {
           project.newsCenter,
           project.evidence.securityAudit.repository,
           project.evidence.noLogsVerification.repository,
+          project.openSource.hub,
+          ...project.openSource.repositories.map(({ repository }) => repository),
         ],
       },
     ],
@@ -147,7 +152,7 @@ function page(copy, locale) {
       <article class="card"><h2>${escapeHtml(copy.auditTitle)}</h2><p>${escapeHtml(copy.audit)}</p><p>${link(project.evidence.securityAudit.repository, copy.labels.securityRepo)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.noLogsTitle)}</h2><p>${escapeHtml(copy.noLogs)}</p><p>${link(project.evidence.noLogsVerification.repository, copy.labels.noLogsRepo)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.techTitle)}</h2><p>${escapeHtml(copy.tech)}</p><p>${link(project.technology.solaArticle, copy.labels.sola)}</p></article>
-      <article class="card"><h2>${escapeHtml(copy.openSourceTitle)}</h2><p>${escapeHtml(copy.openSource)}</p><p>${link(project.technology.openSourcePlan, copy.labels.openSource)}</p></article>
+      <article class="card wide"><h2>${escapeHtml(copy.openSourceTitle)}</h2><p>${escapeHtml(copy.openSource)}</p><ul><li>${link(protocolRepo.repository, copy.labels.protocolRepo)} · ${escapeHtml(protocolRepo.license)} — ${escapeHtml(copy.openSourceProtocol)}</li><li>${link(appRepo.repository, copy.labels.appRepo)} · ${escapeHtml(appRepo.license)} — ${escapeHtml(copy.openSourceApp)}</li><li>${link(project.openSource.hub, copy.labels.hubRepo)} — ${escapeHtml(copy.openSourceHub)}</li></ul><p>${escapeHtml(copy.openSourceBoundary)}</p><p>${link(announcement('protocol', locale), copy.labels.protocolArticle)} · ${link(announcement('app', locale), copy.labels.appArticle)} · ${link(announcement('page', locale), copy.labels.openSourcePage)} · ${link(project.technology.openSourcePlan, copy.labels.openSource)}</p></article>
     </section>
     <aside class="note"><strong>${escapeHtml(copy.trustTitle)}.</strong> ${escapeHtml(copy.trust)} ${escapeHtml(copy.labels.lastVerified)}: ${project.lastVerified}.</aside>
   </main>

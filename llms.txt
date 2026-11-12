@@ -1,6 +1,6 @@
 # SingLinkVPN Free VPN and Open-Source Project
 
-> SingLinkVPN is a free VPN for Windows, macOS, iOS, Android and Linux with open-source tools, security-audit evidence, no-logs verification and Sola protocol research.
+> SingLinkVPN is a free VPN for Windows, macOS, iOS, Android and Linux with open-source tools, an open-source protocol and prototype app, security-audit evidence, no-logs verification and Sola protocol research.
 
 Canonical repository: https://github.com/SingLinkLabs/SingLinkVPN
 Official website: https://singlinkvpn.com/
@@ -23,6 +23,13 @@ Machine-readable project record: https://singlinklabs.github.io/SingLinkVPN/meta
 
 ## Open-source project
 
+- Phase 2 (released 2026-11-12): the SingLink Protocol and the SingLinkVPN first-generation prototype app are open source under Apache-2.0
+- SingLink Protocol (SingLink/1, 1.0 draft; Go; signed device-bound access passes, inner end-to-end encryption, hybrid X25519 + ML-KEM-768 key exchange; internal security review with 31 findings, all High and Medium fixed): https://github.com/SingLinkLabs/singlink-protocol
+- SingLinkVPN prototype app (Windows, macOS, Android, iOS; Flutter + Go; separate from the official apps): https://github.com/SingLinkLabs/singlink-vpn-app
+- Open-source hub: https://github.com/SingLinkLabs/singlink-vpn-open-source
+- Closed source: official SingLinkVPN apps, servers, payment, nodes and the SingLink 2.0 core protocol
+- Announcements: https://singlinkvpn.com/en/blog/singlink-protocol-open-source/ and https://singlinkvpn.com/en/blog/singlinkvpn-app-open-source/
+- Official open-source page: https://singlinkvpn.com/en/tech/open-source/
 - Repository: https://github.com/SingLinkLabs/SingLinkVPN
 - Open-source plan: https://singlinknews.com/singlink-vpn-open-source-plan
 - Machine-readable facts: https://singlinklabs.github.io/SingLinkVPN/metadata/project.json

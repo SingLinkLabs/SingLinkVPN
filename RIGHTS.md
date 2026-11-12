@@ -2,6 +2,8 @@
 
 The [MIT licence](./LICENSE) covers the original documentation, scripts, metadata schema and generated project pages published by SingLinkLabs in this repository.
 
+The SingLink Protocol and the SingLinkVPN first-generation prototype app are published under the Apache-2.0 licence in their own repositories ([singlink-protocol](https://github.com/SingLinkLabs/singlink-protocol), [singlink-vpn-app](https://github.com/SingLinkLabs/singlink-vpn-app)); their NOTICE files describe the trademark terms for forks.
+
 Separate rights information accompanies these materials:
 
 - SingLinkVPN client applications, backend services, production infrastructure and installer binaries;

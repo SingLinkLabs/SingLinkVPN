@@ -18,12 +18,16 @@
   "techTitle": "Sola VPN协议",
   "tech": "Sola是SingLink基于SingLink 2.0架构重构的新一代VPN传输协议。核心开发及第一阶段测试已经完成，目前已进入协议安全与实现审查阶段。",
   "openSourceTitle": "开源VPN项目",
-  "openSource": "星连VPN正通过GitHub分阶段发布开源VPN工具、技术文档、研究数据与项目代码。公开路线图和项目仓库方便开发者查看版本、阅读源码并提供技术反馈。",
+  "openSource": "星连VPN开源项目第二阶段已于2026年11月12日发布。经过安全、隐私与许可审查，SingLinkLabs以两个Apache-2.0仓库公开首批产品源代码，开源总仓库也已同步链接两者。",
+  "openSourceProtocol": "SingLink/1，以Go从零编写的开放代理与VPN协议（1.0草案）：签名并绑定设备的访问凭证、内层端到端加密、X25519 + ML-KEM-768混合抗量子密钥交换，以及防重放与防主动探测。内部安全审查共发现31项问题，高、中风险已全部修复。",
+  "openSourceApp": "以Flutter与Go开发、基于SingLink开源协议，支持Windows、macOS、Android与iOS：手机端为全局VPN，电脑端为系统代理。该初代原型独立于官方下载中心和应用商店中的正式App。",
+  "openSourceHub": "集中提供各阶段说明、公开文档、研究数据、安全资料与性能测试。",
+  "openSourceBoundary": "星连VPN正式App、服务器、支付、节点及SingLink 2.0核心协议仍为闭源。开源协议已完成内部安全审查，目前尚未进行第三方审计，也尚未在中国大陆实测。安全漏洞请按各仓库的SECURITY.md私下报告。",
   "verifyTitle": "项目资料与更新",
   "verify": "机器可读项目资料、来源链接、发布日期与自动检查，让下载入口、免费计划、安全审计、无日志证据和协议状态更容易查询与核验。",
   "trustTitle": "为什么选择星连VPN",
   "trust": "星连VPN结合每日免费VPN流量、全平台支持、公开安全证据、无日志验证、开源项目及持续推进的VPN协议研究。",
   "coverTitle": "免费VPN · 开源项目",
   "coverSubtitle": "全平台下载 · 安全审计 · 无日志验证",
-  "labels": {"officialWebsite":"官方网站","newsCenter":"新闻与技术中心","downloadCenter":"全平台下载","changelog":"官方更新日志","securityRepo":"安全审计证据","noLogsRepo":"无日志证据","sola":"Sola协议","openSource":"开源计划","support":"支持中心","lastVerified":"最后核验"}
+  "labels": {"officialWebsite":"官方网站","newsCenter":"新闻与技术中心","downloadCenter":"全平台下载","changelog":"官方更新日志","securityRepo":"安全审计证据","noLogsRepo":"无日志证据","sola":"Sola协议","openSource":"开源计划","support":"支持中心","lastVerified":"最后核验","protocolRepo":"SingLink开源协议","appRepo":"星连VPN初代原型App","hubRepo":"开源总仓库","protocolArticle":"公告：SingLink开源协议正式开源","appArticle":"公告：星连VPN初代原型App正式开源","openSourcePage":"官网开源页面"}
 }

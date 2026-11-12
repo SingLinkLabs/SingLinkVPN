@@ -21,7 +21,7 @@
     },
     "openSource": {
       "type": "object",
-      "required": ["status", "license", "plan"]
+      "required": ["status", "license", "plan", "phase", "phaseReleased", "hub", "repositories", "closedSource", "websiteLocales", "announcements"]
     },
     "platforms": { "type": "array", "minItems": 6, "uniqueItems": true },
     "evidence": { "type": "object", "required": ["securityAudit", "noLogsVerification", "umbrellaIndex"] },

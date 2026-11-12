@@ -8,7 +8,7 @@ import sharp from 'sharp';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const locales = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko', 'vi', 'th', 'ru'];
 const readmeNames = { en: 'README.md', 'zh-Hant': 'README.zh-Hant.md', 'zh-Hans': 'README.zh-Hans.md', ja: 'README.ja.md', ko: 'README.ko.md', vi: 'README.vi.md', th: 'README.th.md', ru: 'README.ru.md' };
-const requiredCopy = ['htmlLang', 'title', 'description', 'h1', 'hero', 'aboutTitle', 'about', 'downloadsTitle', 'downloads', 'freeTitle', 'free', 'evidenceTitle', 'auditTitle', 'audit', 'noLogsTitle', 'noLogs', 'techTitle', 'tech', 'openSourceTitle', 'openSource', 'verifyTitle', 'verify', 'trustTitle', 'trust', 'coverTitle', 'coverSubtitle', 'labels'];
+const requiredCopy = ['htmlLang', 'title', 'description', 'h1', 'hero', 'aboutTitle', 'about', 'downloadsTitle', 'downloads', 'freeTitle', 'free', 'evidenceTitle', 'auditTitle', 'audit', 'noLogsTitle', 'noLogs', 'techTitle', 'tech', 'openSourceTitle', 'openSource', 'openSourceProtocol', 'openSourceApp', 'openSourceHub', 'openSourceBoundary', 'verifyTitle', 'verify', 'trustTitle', 'trust', 'coverTitle', 'coverSubtitle', 'labels'];
 
 test('project record contains stable, scoped facts', async () => {
   const project = JSON.parse(await readFile(path.join(root, 'metadata/project.json'), 'utf8'));
@@ -18,6 +18,16 @@ test('project record contains stable, scoped facts', async () => {
   assert.equal(project.category, 'Free VPN');
   assert.equal(project.freeVpn, true);
   assert.equal(project.openSource.license, 'MIT');
+  assert.equal(project.openSource.phase, 2);
+  assert.equal(project.openSource.phaseReleased, '2026-11-12');
+  assert.equal(project.openSource.hub, 'https://github.com/SingLinkLabs/singlink-vpn-open-source');
+  assert.deepEqual(project.openSource.repositories.map(({ repository }) => repository), [
+    'https://github.com/SingLinkLabs/singlink-protocol',
+    'https://github.com/SingLinkLabs/singlink-vpn-app',
+  ]);
+  for (const repo of project.openSource.repositories) assert.equal(repo.license, 'Apache-2.0');
+  assert.ok(project.openSource.closedSource.includes('SingLink 2.0 core protocol'));
+  assert.deepEqual(Object.keys(project.openSource.websiteLocales), locales);
   assert.equal(project.platforms.length, 6);
   const serialized = JSON.stringify(project);
   assert.doesNotMatch(serialized, /localhost|127\.0\.0\.1|download\.singlinkvpn\.com|sg\.singlinkvpn\.com/);
@@ -33,6 +43,9 @@ test('all locale records are complete and distinct', async () => {
   for (const locale of locales) {
     const copy = JSON.parse(await readFile(path.join(root, `metadata/locales/${locale}.json`), 'utf8'));
     for (const key of requiredCopy) assert.ok(copy[key], `${locale}.${key}`);
+    for (const key of ['protocolRepo', 'appRepo', 'hubRepo', 'protocolArticle', 'appArticle', 'openSourcePage']) {
+      assert.ok(copy.labels[key], `${locale}.labels.${key}`);
+    }
     assert.ok(copy.title.length >= 20, `${locale} title is descriptive`);
     assert.ok(copy.description.length >= 60, `${locale} description is descriptive`);
     assert.ok(copy.free.length >= 60, `${locale} free VPN copy is complete`);
@@ -61,6 +74,15 @@ test('all generated READMEs preserve evidence and reject stale claims', async ()
     assert.ok(markdown.includes(copy.freeTitle));
     assert.ok(markdown.includes(copy.openSourceTitle));
     assert.ok(markdown.includes(`assets/covers/${locale}.png`));
+    for (const repo of ['singlink-protocol', 'singlink-vpn-app', 'singlink-vpn-open-source']) {
+      assert.ok(markdown.includes(`https://github.com/SingLinkLabs/${repo})`), `${locale} README links ${repo}`);
+    }
+    const websiteLocale = { en: 'en', 'zh-Hant': 'hk', 'zh-Hans': 'cn' }[locale] ?? locale;
+    assert.ok(markdown.includes(`https://singlinkvpn.com/${websiteLocale}/blog/singlink-protocol-open-source/`), `${locale} protocol announcement`);
+    assert.ok(markdown.includes(`https://singlinkvpn.com/${websiteLocale}/blog/singlinkvpn-app-open-source/`), `${locale} app announcement`);
+    assert.ok(markdown.includes(copy.openSourceBoundary), `${locale} closed-source boundary`);
+    if (locale === 'zh-Hans') assert.doesNotMatch(markdown, /星連|SingLinkVPN(?!\/|-)/, 'Simplified brand only');
+    if (locale === 'zh-Hant') assert.doesNotMatch(markdown, /星连|SingLinkVPN(?!\/|-)/, 'Traditional brand only');
     assert.doesNotMatch(markdown, /sg\.singlinkvpn\.com|download\.singlinkvpn\.com|unlimited bandwidth|300%|2000Mbps/i);
     assert.doesNotMatch(markdown, /not a claim|does not guarantee|must not|cannot be described|not a permanent guarantee|并不代表|不能表述|并非.*永久保证|不保证搜索|只适用于|不會自動|不保证搜索/i);
   }

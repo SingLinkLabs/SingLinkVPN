@@ -28,6 +28,10 @@ const languageNames = {
 
 const coverPaths = Object.fromEntries(locales.map((locale) => [locale, `./assets/covers/${locale}.png`]));
 
+const [protocolRepo, appRepo] = project.openSource.repositories;
+const announcement = (key, locale) =>
+  project.openSource.announcements[key].replace('{locale}', project.openSource.websiteLocales[locale]);
+
 function nav() {
   return locales.map((locale) => `[${languageNames[locale]}](./${filenames[locale]})`).join(' · ');
 }
@@ -92,6 +96,15 @@ ${copy.tech}
 
 ${copy.openSource}
 
+- **[${copy.labels.protocolRepo}](${protocolRepo.repository})** · ${protocolRepo.license} — ${copy.openSourceProtocol}
+- **[${copy.labels.appRepo}](${appRepo.repository})** · ${appRepo.license} — ${copy.openSourceApp}
+- **[${copy.labels.hubRepo}](${project.openSource.hub})** — ${copy.openSourceHub}
+
+${copy.openSourceBoundary}
+
+- [${copy.labels.protocolArticle}](${announcement('protocol', locale)})
+- [${copy.labels.appArticle}](${announcement('app', locale)})
+- [${copy.labels.openSourcePage}](${announcement('page', locale)})
 - [${copy.labels.openSource}](${project.technology.openSourcePlan})
 
 ## ${copy.verifyTitle}

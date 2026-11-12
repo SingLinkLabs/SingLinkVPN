@@ -18,9 +18,41 @@
     "source": "https://singlinknews.com/free-plan"
   },
   "openSource": {
-    "status": "Publishing open-source VPN tools, technical documentation, research data and project code in phases",
+    "status": "Phase 2 released on 2026-11-12: the SingLink Protocol and the SingLinkVPN first-generation prototype app are open source under Apache-2.0; documentation, research data and tools continue to be published in phases",
     "license": "MIT",
-    "plan": "https://singlinknews.com/singlink-vpn-open-source-plan"
+    "licenseScope": "MIT applies to this repository; each linked repository carries its own licence",
+    "plan": "https://singlinknews.com/singlink-vpn-open-source-plan",
+    "phase": 2,
+    "phaseReleased": "2026-11-12",
+    "hub": "https://github.com/SingLinkLabs/singlink-vpn-open-source",
+    "repositories": [
+      {
+        "name": "SingLink Protocol",
+        "repository": "https://github.com/SingLinkLabs/singlink-protocol",
+        "license": "Apache-2.0",
+        "version": "1.0.0-draft (wire name SingLink/1)",
+        "language": "Go",
+        "summary": "Open proxy/VPN protocol written from scratch: signed device-bound access passes, inner end-to-end encryption, hybrid X25519 + ML-KEM-768 post-quantum key exchange, replay and active-probe resistance",
+        "securityReview": "Internal review: 31 findings, all High and Medium fixed; no third-party audit yet",
+        "fieldTesting": "Not yet field-tested in mainland China"
+      },
+      {
+        "name": "SingLinkVPN prototype app",
+        "repository": "https://github.com/SingLinkLabs/singlink-vpn-app",
+        "license": "Apache-2.0",
+        "version": "First-generation prototype",
+        "language": "Flutter (Dart) + Go",
+        "platforms": ["Windows", "macOS", "Android", "iOS"],
+        "summary": "Prototype client built on the SingLink Protocol: device-wide VPN on mobile, system proxy on desktop; separate from the official SingLinkVPN apps"
+      }
+    ],
+    "closedSource": ["Official SingLinkVPN apps", "Servers", "Payment", "Nodes", "SingLink 2.0 core protocol"],
+    "websiteLocales": { "en": "en", "zh-Hant": "hk", "zh-Hans": "cn", "ja": "ja", "ko": "ko", "vi": "vi", "th": "th", "ru": "ru" },
+    "announcements": {
+      "protocol": "https://singlinkvpn.com/{locale}/blog/singlink-protocol-open-source/",
+      "app": "https://singlinkvpn.com/{locale}/blog/singlinkvpn-app-open-source/",
+      "page": "https://singlinkvpn.com/{locale}/tech/open-source/"
+    }
   },
   "platforms": [
     { "name": "iOS", "url": "https://singlinkvpn.com/en/download/ios/" },

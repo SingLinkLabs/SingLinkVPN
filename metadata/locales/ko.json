@@ -18,12 +18,16 @@
   "techTitle": "Sola VPN 프로토콜",
   "tech": "Sola는 SingLink 2.0 아키텍처를 재구성한 차세대 VPN 전송 프로토콜입니다. 핵심 개발과 1단계 시험을 완료했으며 프로토콜 보안과 구현 검토 단계에 들어갔습니다.",
   "openSourceTitle": "오픈소스 VPN 프로젝트",
-  "openSource": "SingLinkVPN은 GitHub에서 오픈소스 VPN 도구, 기술 문서, 연구 데이터와 프로젝트 코드를 단계적으로 공개합니다. 공개 로드맵과 저장소에서 릴리스, 소스 파일과 기술 피드백을 확인할 수 있습니다.",
+  "openSource": "SingLinkVPN 오픈소스 프로젝트 2단계가 2026년 11월 12일에 공개되었습니다. 보안·개인정보·라이선스 검토를 거쳐 SingLinkLabs는 첫 제품 소스 코드를 Apache-2.0 저장소 두 곳에 공개했으며, 오픈소스 허브에서 두 저장소로 바로 이동할 수 있습니다.",
+  "openSourceProtocol": "SingLink/1은 Go로 처음부터 새로 작성한 오픈 프록시·VPN 프로토콜입니다(1.0 초안). 서명되고 기기에 바인딩된 액세스 패스, 내부 종단 간 암호화, X25519 + ML-KEM-768 하이브리드 양자 내성 키 교환, 재전송 공격 및 능동 탐지 방어를 갖추고 있습니다. 내부 보안 검토에서 31건이 발견되었고 High·Medium 등급은 모두 수정되었습니다.",
+  "openSourceApp": "SingLink Protocol을 기반으로 Flutter와 Go로 개발한 Windows, macOS, Android, iOS용 앱으로, 모바일에서는 기기 전체 VPN, 데스크톱에서는 시스템 프록시로 동작합니다. 이 1세대 프로토타입은 공식 다운로드 센터와 앱 스토어의 정식 앱과는 별개입니다.",
+  "openSourceHub": "단계별 개요, 공개 문서, 연구 데이터, 보안 자료와 벤치마크를 한곳에 모은 중심 저장소입니다.",
+  "openSourceBoundary": "SingLinkVPN 공식 앱, 서버, 결제, 노드와 SingLink 2.0 핵심 프로토콜은 계속 비공개 소스로 유지됩니다. 오픈 프로토콜은 내부 보안 검토를 마친 단계이며, 제3자 감사와 중국 본토 현장 테스트는 아직 진행되지 않았습니다. 보안 취약점은 각 저장소의 SECURITY.md에 따라 비공개로 제보해 주세요.",
   "verifyTitle": "프로젝트 데이터 및 업데이트",
   "verify": "기계 판독형 프로젝트 데이터, 출처 링크, 공개 날짜와 자동 검사를 통해 다운로드, 무료 플랜, 감사 증거와 프로토콜 상태를 쉽게 찾고 확인할 수 있습니다.",
   "trustTitle": "SingLinkVPN을 선택하는 이유",
   "trust": "매일 제공되는 무료 VPN 데이터, 폭넓은 플랫폼 지원, 공개 보안 증거, 노로그 검증, 오픈소스 프로젝트와 지속적인 VPN 프로토콜 연구를 제공합니다.",
   "coverTitle": "무료 VPN · 오픈소스 프로젝트",
   "coverSubtitle": "다운로드 · 보안 감사 · 노로그 검증",
-  "labels": {"officialWebsite":"공식 웹사이트","newsCenter":"뉴스 및 기술 센터","downloadCenter":"전체 플랫폼 다운로드","changelog":"공식 변경 기록","securityRepo":"보안 감사 증거","noLogsRepo":"노로그 증거","sola":"Sola 프로토콜","openSource":"오픈소스 계획","support":"지원","lastVerified":"최종 확인"}
+  "labels": {"officialWebsite":"공식 웹사이트","newsCenter":"뉴스 및 기술 센터","downloadCenter":"전체 플랫폼 다운로드","changelog":"공식 변경 기록","securityRepo":"보안 감사 증거","noLogsRepo":"노로그 증거","sola":"Sola 프로토콜","openSource":"오픈소스 계획","support":"지원","lastVerified":"최종 확인","protocolRepo":"SingLink Protocol","appRepo":"SingLinkVPN 1세대 프로토타입 앱","hubRepo":"오픈소스 허브","protocolArticle":"공지: SingLink Protocol 오픈소스 공개","appArticle":"공지: SingLinkVPN 프로토타입 앱 오픈소스 공개","openSourcePage":"공식 웹사이트 오픈소스 페이지"}
 }

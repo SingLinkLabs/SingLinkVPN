@@ -57,8 +57,17 @@ Sola是SingLink基於SingLink 2.0架構重構的新一代VPN傳輸協議。核�
 
 ## 開源VPN項目
 
-星連VPN正透過GitHub分階段發布開源VPN工具、技術文件、研究數據與項目程式碼。公開路線圖和項目儲存庫方便開發者查看版本、閱讀原始碼並提供技術意見。
+星連VPN開源項目第二階段已於2026年11月12日發布。經過安全、私隱及授權審查，SingLinkLabs以兩個Apache-2.0儲存庫公開第一批產品原始碼，開源總庫也已同步連結兩者。
 
+- **[SingLink開源協議](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1，以Go從零編寫的開放代理與VPN協議（1.0草案）：簽章並綁定裝置的權限通行證、內層端對端加密、X25519 + ML-KEM-768混合抗量子金鑰交換，以及防重放與防主動探測。內部安全審查共發現31項問題，高、中風險已全部修正。
+- **[星連VPN初代原型App](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — 以Flutter與Go開發、基於SingLink開源協議，支援Windows、macOS、Android與iOS：手機端為整機VPN，電腦端為系統代理。此初代原型與官方下載中心及應用程式商店中的正式App各自獨立。
+- **[開源總庫](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — 集中提供各階段說明、公開文件、研究數據、安全資料與效能測試。
+
+星連VPN正式App、伺服器、付款、節點及SingLink 2.0核心協議仍維持閉源。開源協議已完成內部安全審查，目前尚未進行第三方審計，也尚未在中國大陸實測。安全漏洞請依各儲存庫的SECURITY.md私下回報。
+
+- [公告：SingLink開源協議正式開源](https://singlinkvpn.com/hk/blog/singlink-protocol-open-source/)
+- [公告：星連VPN初代原型App正式開源](https://singlinkvpn.com/hk/blog/singlinkvpn-app-open-source/)
+- [官網開源頁面](https://singlinkvpn.com/hk/tech/open-source/)
 - [開源計劃](https://singlinknews.com/singlink-vpn-open-source-plan)
 
 ## 項目資料與更新
