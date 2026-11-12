@@ -57,16 +57,18 @@ Sola是SingLink基於SingLink 2.0架構重構的新一代VPN傳輸協議。核�
 
 ## 開源VPN項目
 
-星連VPN開源項目第二階段已於2026年11月12日發布。經過內部安全審計，SingLinkLabs以兩個Apache-2.0儲存庫公開第一代SingLink協議與第一代星連VPN用戶端，開源總庫也已同步連結兩者。
+星連VPN開源項目第二階段已於2026年11月12日發布。經過內部安全審計，SingLinkLabs以兩個Apache-2.0儲存庫公開初代SingLink協議與初代星連VPN用戶端，開源總庫也已同步連結兩者。
 
-- **[第一代SingLink協議](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1，即第一代SingLink協議，以Go從零編寫：簽章並綁定裝置的權限通行證、內層端對端加密、X25519 + ML-KEM-768混合抗量子金鑰交換，以及防重放與防主動探測。內部安全審計共發現31項問題，高、中風險已全部修正，並已計劃進行第三方審計。
-- **[第一代星連VPN用戶端](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — 以Flutter與Go開發、基於SingLink協議，支援Windows、macOS、Android與iOS：手機端為整機VPN，電腦端為系統代理。
+SingLink協議從星連VPN早期版本一路演進到現在的SingLink 2.0。這次開源的初代SingLink協議與初代星連VPN用戶端，延續了星連VPN一貫的帳號權限、裝置綁定與安全設計理念。
+
+- **[初代SingLink協議](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1，即初代SingLink協議，以Go從零編寫：簽章並綁定裝置的權限通行證、內層端對端加密、X25519 + ML-KEM-768混合抗量子金鑰交換，以及防重放與防主動探測。內部安全審計共發現31項問題，高、中風險已全部修正，並已計劃進行第三方審計。
+- **[初代星連VPN用戶端](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — 以Flutter與Go開發、基於SingLink協議，支援Windows、macOS、Android與iOS：手機端為整機VPN，電腦端為系統代理。
 - **[開源總庫](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — 集中提供各階段說明、公開文件、研究數據、安全資料與效能測試。
 
-基於安全考量，最新版本（SingLink 2.0核心與現行星連VPN正式App）以及伺服器、付款與節點暫未完全公開，本次只發布不構成安全風險的程式碼。開源計劃會持續推進，後續階段將在完成安全審查後陸續公開更多內容。安全漏洞請依各儲存庫的SECURITY.md私下回報。
+正式版App與協議已升級到新一代架構（SingLink 2.0）；基於安全考量，這些最新版本以及伺服器、付款與節點暫未完全公開，本次只發布不構成安全風險的程式碼。開源計劃會持續推進，後續階段將在完成安全審查後陸續公開更多內容。安全漏洞請依各儲存庫的SECURITY.md私下回報。
 
-- [公告：第一代SingLink協議正式開源](https://singlinkvpn.com/hk/blog/singlink-protocol-open-source/)
-- [公告：第一代星連VPN用戶端正式開源](https://singlinkvpn.com/hk/blog/singlinkvpn-app-open-source/)
+- [公告：初代SingLink協議正式開源](https://singlinkvpn.com/hk/blog/singlink-protocol-open-source/)
+- [公告：初代星連VPN用戶端正式開源](https://singlinkvpn.com/hk/blog/singlinkvpn-app-open-source/)
 - [官網開源頁面](https://singlinkvpn.com/hk/tech/open-source/)
 - [開源計劃](https://singlinknews.com/singlink-vpn-open-source-plan)
 

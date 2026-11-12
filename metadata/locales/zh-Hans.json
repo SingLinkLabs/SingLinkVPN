@@ -18,16 +18,17 @@
   "techTitle": "Sola VPN协议",
   "tech": "Sola是SingLink基于SingLink 2.0架构重构的新一代VPN传输协议。核心开发及第一阶段测试已经完成，目前已进入协议安全与实现审查阶段。",
   "openSourceTitle": "开源VPN项目",
-  "openSource": "星连VPN开源项目第二阶段已于2026年11月12日发布。经过内部安全审计，SingLinkLabs以两个Apache-2.0仓库公开第一代SingLink协议与第一代星连VPN客户端，开源总仓库也已同步链接两者。",
-  "openSourceProtocol": "SingLink/1，即第一代SingLink协议，以Go从零编写：签名并绑定设备的访问凭证、内层端到端加密、X25519 + ML-KEM-768混合抗量子密钥交换，以及防重放与防主动探测。内部安全审计共发现31项问题，高、中风险已全部修复，并已计划进行第三方审计。",
+  "openSource": "星连VPN开源项目第二阶段已于2026年11月12日发布。经过内部安全审计，SingLinkLabs以两个Apache-2.0仓库公开初代SingLink协议与初代星连VPN客户端，开源总仓库也已同步链接两者。",
+  "openSourceProtocol": "SingLink/1，即初代SingLink协议，以Go从零编写：签名并绑定设备的访问凭证、内层端到端加密、X25519 + ML-KEM-768混合抗量子密钥交换，以及防重放与防主动探测。内部安全审计共发现31项问题，高、中风险已全部修复，并已计划进行第三方审计。",
   "openSourceApp": "以Flutter与Go开发、基于SingLink协议，支持Windows、macOS、Android与iOS：手机端为全局VPN，电脑端为系统代理。",
   "openSourceHub": "集中提供各阶段说明、公开文档、研究数据、安全资料与性能测试。",
-  "openSourceBoundary": "出于安全考虑，最新版本（SingLink 2.0核心与现行星连VPN正式App）以及服务器、支付和节点暂未完全公开，本次仅发布不构成安全风险的代码。开源计划将持续推进，后续阶段会在完成安全审查后陆续公开更多内容。安全漏洞请按各仓库的SECURITY.md私下报告。",
+  "openSourceLineage": "SingLink协议从星连VPN早期版本一路演进到现在的SingLink 2.0。这次开源的初代SingLink协议与初代星连VPN客户端，延续了星连VPN一贯的账号权限、设备绑定与安全设计理念。",
+  "openSourceBoundary": "正式版App与协议已升级到新一代架构（SingLink 2.0）；出于安全考虑，这些最新版本以及服务器、支付和节点暂未完全公开，本次仅发布不构成安全风险的代码。开源计划将持续推进，后续阶段会在完成安全审查后陆续公开更多内容。安全漏洞请按各仓库的SECURITY.md私下报告。",
   "verifyTitle": "项目资料与更新",
   "verify": "机器可读项目资料、来源链接、发布日期与自动检查，让下载入口、免费计划、安全审计、无日志证据和协议状态更容易查询与核验。",
   "trustTitle": "为什么选择星连VPN",
   "trust": "星连VPN结合每日免费VPN流量、全平台支持、公开安全证据、无日志验证、开源项目及持续推进的VPN协议研究。",
   "coverTitle": "免费VPN · 开源项目",
   "coverSubtitle": "全平台下载 · 安全审计 · 无日志验证",
-  "labels": {"officialWebsite":"官方网站","newsCenter":"新闻与技术中心","downloadCenter":"全平台下载","changelog":"官方更新日志","securityRepo":"安全审计证据","noLogsRepo":"无日志证据","sola":"Sola协议","openSource":"开源计划","support":"支持中心","lastVerified":"最后核验","protocolRepo":"第一代SingLink协议","appRepo":"第一代星连VPN客户端","hubRepo":"开源总仓库","protocolArticle":"公告：第一代SingLink协议正式开源","appArticle":"公告：第一代星连VPN客户端正式开源","openSourcePage":"官网开源页面"}
+  "labels": {"officialWebsite":"官方网站","newsCenter":"新闻与技术中心","downloadCenter":"全平台下载","changelog":"官方更新日志","securityRepo":"安全审计证据","noLogsRepo":"无日志证据","sola":"Sola协议","openSource":"开源计划","support":"支持中心","lastVerified":"最后核验","protocolRepo":"初代SingLink协议","appRepo":"初代星连VPN客户端","hubRepo":"开源总仓库","protocolArticle":"公告：初代SingLink协议正式开源","appArticle":"公告：初代星连VPN客户端正式开源","openSourcePage":"官网开源页面"}
 }

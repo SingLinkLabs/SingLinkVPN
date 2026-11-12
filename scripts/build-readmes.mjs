@@ -98,6 +98,8 @@ ${copy.tech}
 
 ${copy.openSource}
 
+${copy.openSourceLineage}
+
 - **[${copy.labels.protocolRepo}](${protocolRepo.repository})** · ${protocolRepo.license} — ${copy.openSourceProtocol}
 - **[${copy.labels.appRepo}](${appRepo.repository})** · ${appRepo.license} — ${copy.openSourceApp}
 - **[${copy.labels.hubRepo}](${project.openSource.hub})** — ${copy.openSourceHub}

@@ -59,11 +59,13 @@ Sola là giao thức truyền VPN thế hệ mới được tái cấu trúc t�
 
 Giai đoạn 2 của dự án mã nguồn mở SingLinkVPN đã được phát hành ngày 12 tháng 11 năm 2026. Sau đợt kiểm toán bảo mật nội bộ, SingLinkLabs đã công bố giao thức SingLink thế hệ đầu và ứng dụng SingLinkVPN thế hệ đầu trong hai kho Apache-2.0, và kho tổng hợp mã nguồn mở hiện liên kết đến cả hai.
 
+Giao thức SingLink đã phát triển từ các phiên bản đầu tiên của SingLinkVPN đến SingLink 2.0 hiện nay. Giao thức SingLink thế hệ đầu và ứng dụng SingLinkVPN thế hệ đầu được mở mã nguồn lần này kế thừa các nguyên tắc thiết kế nhất quán của SingLinkVPN: phân quyền theo tài khoản, gắn với thiết bị và bảo mật ngay từ khâu thiết kế.
+
 - **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1 là phiên bản thế hệ đầu của giao thức SingLink, được viết mới hoàn toàn bằng Go: thẻ truy cập có chữ ký và gắn với thiết bị, mã hóa đầu cuối ở lớp trong, trao đổi khóa hậu lượng tử lai X25519 + ML-KEM-768, chống phát lại và chống dò quét chủ động. Đợt kiểm toán bảo mật nội bộ ghi nhận 31 phát hiện, toàn bộ phát hiện mức High và Medium đã được khắc phục, và kiểm toán độc lập bởi bên thứ ba đã được lên kế hoạch.
 - **[Ứng dụng SingLinkVPN thế hệ đầu](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — Xây dựng bằng Flutter và Go trên SingLink Protocol cho Windows, macOS, Android và iOS: VPN toàn thiết bị trên di động và proxy hệ thống trên máy tính.
 - **[Kho tổng hợp mã nguồn mở](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — Tổng quan từng giai đoạn, tài liệu công khai, dữ liệu nghiên cứu, tài liệu bảo mật và kết quả đo hiệu năng được tập hợp tại một nơi.
 
-Vì lý do bảo mật, các phiên bản mới nhất (lõi SingLink 2.0 và ứng dụng chính thức hiện hành) cùng máy chủ, thanh toán và nút mạng chưa được công khai toàn bộ; đợt này chỉ phát hành mã không gây rủi ro bảo mật. Kế hoạch mã nguồn mở vẫn tiếp tục, và các giai đoạn sau sẽ công bố thêm sau khi rà soát bảo mật. Vui lòng báo cáo lỗ hổng một cách riêng tư theo hướng dẫn trong SECURITY.md của từng kho.
+Ứng dụng và giao thức chính thức sau đó đã chuyển sang kiến trúc thế hệ mới (SingLink 2.0); vì lý do bảo mật, các phiên bản mới nhất này cùng máy chủ, thanh toán và nút mạng chưa được công khai toàn bộ, nên đợt này chỉ phát hành mã không gây rủi ro bảo mật. Kế hoạch mã nguồn mở vẫn tiếp tục, và các giai đoạn sau sẽ công bố thêm sau khi rà soát bảo mật. Vui lòng báo cáo lỗ hổng một cách riêng tư theo hướng dẫn trong SECURITY.md của từng kho.
 
 - [Thông báo: giao thức SingLink thế hệ đầu chính thức mở mã nguồn](https://singlinkvpn.com/vi/blog/singlink-protocol-open-source/)
 - [Thông báo: ứng dụng SingLinkVPN thế hệ đầu chính thức mở mã nguồn](https://singlinkvpn.com/vi/blog/singlinkvpn-app-open-source/)

@@ -59,11 +59,13 @@ SolaはSingLink 2.0アーキテクチャを再構築した次世代VPN転送プ�
 
 SingLinkVPNオープンソースプロジェクトの第2段階を2026年11月12日に公開しました。社内セキュリティ監査を経て、SingLinkLabsは第1世代のSingLinkプロトコルと第1世代のSingLinkVPNクライアントを2つのApache-2.0リポジトリで公開し、オープンソースハブから両方にアクセスできるようにしました。
 
+SingLinkプロトコルは、SingLinkVPNの初期バージョンから現在のSingLink 2.0へと進化してきました。今回オープンソース化した第1世代のSingLinkプロトコルと第1世代のSingLinkVPNクライアントは、アカウント単位の権限管理、デバイスバインド、セキュリティ・バイ・デザインというSingLinkVPNが一貫して重視してきた設計思想を受け継いでいます。
+
 - **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1は第1世代のSingLinkプロトコルで、Goでゼロから書き起こしました。署名付きでデバイスに紐づくアクセスパス、内側のエンドツーエンド暗号化、X25519 + ML-KEM-768のハイブリッド耐量子鍵交換、リプレイ攻撃とアクティブプローブへの耐性を備えています。社内セキュリティ監査では31件の指摘があり、HighとMediumはすべて修正済みです。第三者監査も予定しています。
 - **[SingLinkVPN 第1世代クライアント](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — FlutterとGoでSingLink Protocol上に構築した、Windows、macOS、Android、iOS対応のクライアントです。モバイルではデバイス全体のVPN、デスクトップではシステムプロキシとして動作します。
 - **[オープンソースハブ](https://github.com/SingLinkLabs/singlink-vpn-open-source)** — 各段階の概要、公開文書、研究データ、セキュリティ資料、ベンチマークをまとめた中心リポジトリです。
 
-最新版（SingLink 2.0のコアと現行の公式アプリ）とサーバー、決済、ノードは、セキュリティ上の理由からまだ完全には公開しておらず、今回はセキュリティ上のリスクがないコードのみを公開しました。オープンソース計画は今後も続き、セキュリティ審査を経て後続の段階で順次公開していきます。脆弱性は各リポジトリのSECURITY.mdに従って非公開でご報告ください。
+公式アプリとプロトコルはその後、新世代のアーキテクチャ（SingLink 2.0）へ移行しています。これらの最新版とサーバー、決済、ノードは、セキュリティ上の理由からまだ完全には公開しておらず、今回はセキュリティ上のリスクがないコードのみを公開しました。 オープンソース計画は今後も続き、セキュリティ審査を経て後続の段階で順次公開していきます。脆弱性は各リポジトリのSECURITY.mdに従って非公開でご報告ください。
 
 - [お知らせ：第1世代SingLinkプロトコルをオープンソース化](https://singlinkvpn.com/ja/blog/singlink-protocol-open-source/)
 - [お知らせ：第1世代SingLinkVPNクライアントをオープンソース化](https://singlinkvpn.com/ja/blog/singlinkvpn-app-open-source/)

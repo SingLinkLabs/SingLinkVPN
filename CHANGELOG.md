@@ -4,6 +4,7 @@ This changelog covers the SingLinkVPN GitHub project. The [official product chan
 
 ## 1.2.1 — 2026-11-13
 
+- Added the approved lineage statement (from SingLinkVPN's early versions to SingLink 2.0; the first generation carries forward the design principles) in all eight languages, Pages, metadata, `llms.txt` and docs.
 - Updated the open-source wording in all eight languages: the release is the first-generation SingLink protocol and the first-generation SingLinkVPN client, published after an internal security audit; the latest versions stay closed for security reasons for now, and the open-source plan continues in later phases.
 - Replaced the retired Free Plan and Apple TV links with the official pricing page (per language) and `/download/appletv/`.
 

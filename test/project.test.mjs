@@ -8,7 +8,7 @@ import sharp from 'sharp';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const locales = ['en', 'zh-Hant', 'zh-Hans', 'ja', 'ko', 'vi', 'th', 'ru'];
 const readmeNames = { en: 'README.md', 'zh-Hant': 'README.zh-Hant.md', 'zh-Hans': 'README.zh-Hans.md', ja: 'README.ja.md', ko: 'README.ko.md', vi: 'README.vi.md', th: 'README.th.md', ru: 'README.ru.md' };
-const requiredCopy = ['htmlLang', 'title', 'description', 'h1', 'hero', 'aboutTitle', 'about', 'downloadsTitle', 'downloads', 'freeTitle', 'free', 'evidenceTitle', 'auditTitle', 'audit', 'noLogsTitle', 'noLogs', 'techTitle', 'tech', 'openSourceTitle', 'openSource', 'openSourceProtocol', 'openSourceApp', 'openSourceHub', 'openSourceBoundary', 'verifyTitle', 'verify', 'trustTitle', 'trust', 'coverTitle', 'coverSubtitle', 'labels'];
+const requiredCopy = ['htmlLang', 'title', 'description', 'h1', 'hero', 'aboutTitle', 'about', 'downloadsTitle', 'downloads', 'freeTitle', 'free', 'evidenceTitle', 'auditTitle', 'audit', 'noLogsTitle', 'noLogs', 'techTitle', 'tech', 'openSourceTitle', 'openSource', 'openSourceProtocol', 'openSourceApp', 'openSourceHub', 'openSourceLineage', 'openSourceBoundary', 'verifyTitle', 'verify', 'trustTitle', 'trust', 'coverTitle', 'coverSubtitle', 'labels'];
 
 test('project record contains stable, scoped facts', async () => {
   const project = JSON.parse(await readFile(path.join(root, 'metadata/project.json'), 'utf8'));
@@ -84,6 +84,8 @@ test('all generated READMEs preserve evidence and reject stale claims', async ()
     assert.ok(markdown.includes('(https://singlinkvpn.com/en/download/appletv/)'), `${locale} Apple TV link`);
     assert.ok(markdown.includes(`https://singlinkvpn.com/${websiteLocale}/blog/singlinkvpn-app-open-source/`), `${locale} app announcement`);
     assert.ok(markdown.includes(copy.openSourceBoundary), `${locale} closed-source boundary`);
+    assert.ok(markdown.includes(copy.openSourceLineage), `${locale} lineage`);
+    assert.match(copy.openSourceLineage, /SingLink 2\.0/, `${locale} lineage names SingLink 2.0`);
     if (locale === 'zh-Hans') assert.doesNotMatch(markdown, /星連|SingLinkVPN(?!\/|-)/, 'Simplified brand only');
     if (locale === 'zh-Hant') assert.doesNotMatch(markdown, /星连|SingLinkVPN(?!\/|-)/, 'Traditional brand only');
     assert.doesNotMatch(markdown, /sg\.singlinkvpn\.com|download\.singlinkvpn\.com|unlimited bandwidth|300%|2000Mbps/i);
