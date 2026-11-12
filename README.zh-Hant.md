@@ -59,7 +59,7 @@ Sola是SingLink基於SingLink 2.0架構重構的新一代VPN傳輸協議。核�
 
 星連VPN開源項目第二階段已於2026年11月12日發布。經過內部安全審計，SingLinkLabs以兩個Apache-2.0儲存庫公開初代SingLink協議與初代星連VPN用戶端，開源總庫也已同步連結兩者。
 
-SingLink協議從星連VPN早期版本、星連 Beta 一路演進到現在的SingLink 2.0。這次開源的初代SingLink協議與初代星連VPN用戶端，延續了星連VPN一貫的帳號權限、裝置綁定與安全設計理念。
+SingLink協議從星連VPN早期版本、SingLink Beta 一路演進到現在的SingLink 2.0。這次開源的初代SingLink協議與初代星連VPN用戶端，延續了星連VPN一貫的帳號權限、裝置綁定與安全設計理念。
 
 - **[初代SingLink協議](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1，即初代SingLink協議，以Go從零編寫：簽章並綁定裝置的權限通行證、內層端對端加密、X25519 + ML-KEM-768混合抗量子金鑰交換，以及防重放與防主動探測。內部安全審計共發現31項問題，高、中風險已全部修正，並已計劃進行第三方審計。
 - **[初代星連VPN用戶端](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — 以Flutter與Go開發、基於SingLink協議，支援Windows、macOS、Android與iOS：手機端為整機VPN，電腦端為系統代理。
