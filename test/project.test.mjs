@@ -31,6 +31,7 @@ test('project record contains stable, scoped facts', async () => {
   assert.equal(project.platforms.length, 6);
   const serialized = JSON.stringify(project);
   assert.doesNotMatch(serialized, /localhost|127\.0\.0\.1|download\.singlinkvpn\.com|sg\.singlinkvpn\.com/);
+  assert.doesNotMatch(serialized, /singlinknews\.com\/free-plan|\/download\/tv\//, 'retired free-plan and Apple TV routes');
   assert.match(project.evidence.securityAudit.result, /100\/100/);
   assert.equal(project.evidence.noLogsVerification.result, 'Passed');
 });
@@ -79,6 +80,8 @@ test('all generated READMEs preserve evidence and reject stale claims', async ()
     }
     const websiteLocale = { en: 'en', 'zh-Hant': 'hk', 'zh-Hans': 'cn' }[locale] ?? locale;
     assert.ok(markdown.includes(`https://singlinkvpn.com/${websiteLocale}/blog/singlink-protocol-open-source/`), `${locale} protocol announcement`);
+    assert.ok(markdown.includes(`(https://singlinkvpn.com/${websiteLocale}/pricing/)`), `${locale} localized free plan link`);
+    assert.ok(markdown.includes('(https://singlinkvpn.com/en/download/appletv/)'), `${locale} Apple TV link`);
     assert.ok(markdown.includes(`https://singlinkvpn.com/${websiteLocale}/blog/singlinkvpn-app-open-source/`), `${locale} app announcement`);
     assert.ok(markdown.includes(copy.openSourceBoundary), `${locale} closed-source boundary`);
     if (locale === 'zh-Hans') assert.doesNotMatch(markdown, /星連|SingLinkVPN(?!\/|-)/, 'Simplified brand only');

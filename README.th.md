@@ -25,13 +25,13 @@ SingLinkVPN มอบข้อมูล VPN ฟรีทุกวันสำห
 - [Windows](https://singlinkvpn.com/en/download/windows/)
 - [macOS](https://singlinkvpn.com/en/download/macos/)
 - [Linux](https://singlinkvpn.com/en/download/linux/)
-- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+- [Apple TV](https://singlinkvpn.com/en/download/appletv/)
 
 ## แผน VPN ฟรี
 
 Free Plan ของ SingLinkVPN ให้ข้อมูล VPN ฟรี 200 MB ต่อวันบนมือถือ และ 500 MB ต่อวันบนเดสก์ท็อป แคมเปญเดสก์ท็อปที่เข้าเงื่อนไขให้สูงสุด 1 GB ต่อวัน
 
-- [แผน VPN ฟรี](https://singlinknews.com/free-plan)
+- [แผน VPN ฟรี](https://singlinkvpn.com/th/pricing/)
 
 ## หลักฐานความปลอดภัยและความเป็นส่วนตัว
 

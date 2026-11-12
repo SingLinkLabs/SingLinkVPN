@@ -29,6 +29,8 @@ const languageNames = {
 const coverPaths = Object.fromEntries(locales.map((locale) => [locale, `./assets/covers/${locale}.png`]));
 
 const [protocolRepo, appRepo] = project.openSource.repositories;
+const freePlanUrl = (locale) =>
+  project.freePlan.localizedSource.replace('{locale}', project.openSource.websiteLocales[locale]);
 const announcement = (key, locale) =>
   project.openSource.announcements[key].replace('{locale}', project.openSource.websiteLocales[locale]);
 
@@ -68,7 +70,7 @@ ${platformLinks}
 
 ${copy.free}
 
-- [${copy.freeTitle}](${project.freePlan.source})
+- [${copy.freeTitle}](${freePlanUrl(locale)})
 
 ## ${copy.evidenceTitle}
 

@@ -25,13 +25,13 @@ SingLinkVPN은 모바일과 데스크톱 사용자에게 매일 무료 VPN 데�
 - [Windows](https://singlinkvpn.com/en/download/windows/)
 - [macOS](https://singlinkvpn.com/en/download/macos/)
 - [Linux](https://singlinkvpn.com/en/download/linux/)
-- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+- [Apple TV](https://singlinkvpn.com/en/download/appletv/)
 
 ## 무료 VPN 플랜
 
 SingLinkVPN Free Plan은 모바일에서 하루 200 MB, 데스크톱에서 하루 500 MB의 무료 VPN 데이터를 제공합니다. 대상 데스크톱 캠페인에서는 하루 최대 1 GB를 제공합니다.
 
-- [무료 VPN 플랜](https://singlinknews.com/free-plan)
+- [무료 VPN 플랜](https://singlinkvpn.com/ko/pricing/)
 
 ## 보안 및 개인정보 증거
 

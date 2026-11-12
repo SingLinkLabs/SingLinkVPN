@@ -17,7 +17,7 @@
     "changelog": { "type": "string", "format": "uri" },
     "freePlan": {
       "type": "object",
-      "required": ["mobileDailyMb", "desktopDailyMb", "eligibleDesktopPromotionDailyMb", "source"]
+      "required": ["mobileDailyMb", "desktopDailyMb", "eligibleDesktopPromotionDailyMb", "source", "localizedSource"]
     },
     "openSource": {
       "type": "object",

@@ -17,7 +17,7 @@ Machine-readable project record: https://singlinklabs.github.io/SingLinkVPN/meta
 
 - Downloads: https://singlinkvpn.com/en/download/
 - Product changelog: https://singlinkvpn.com/en/tech/changelog/
-- Free Plan: https://singlinknews.com/free-plan
+- Free Plan: https://singlinkvpn.com/en/pricing/
 - Sola protocol: https://singlinknews.com/sola-protocol
 - Open-source plan: https://singlinknews.com/singlink-vpn-open-source-plan
 

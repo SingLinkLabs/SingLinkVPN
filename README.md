@@ -25,13 +25,13 @@ Official platform pages provide the latest SingLinkVPN apps, installation instru
 - [Windows](https://singlinkvpn.com/en/download/windows/)
 - [macOS](https://singlinkvpn.com/en/download/macos/)
 - [Linux](https://singlinkvpn.com/en/download/linux/)
-- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+- [Apple TV](https://singlinkvpn.com/en/download/appletv/)
 
 ## Free VPN plan
 
 The SingLinkVPN Free Plan provides 200 MB of free VPN data per day on mobile and 500 MB per day on desktop. Eligible desktop campaigns provide up to 1 GB per day.
 
-- [Free VPN plan](https://singlinknews.com/free-plan)
+- [Free VPN plan](https://singlinkvpn.com/en/pricing/)
 
 ## Security and privacy evidence
 

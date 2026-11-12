@@ -10,6 +10,7 @@ const urls = new Set([
   project.downloadCenter,
   project.changelog,
   project.freePlan.source,
+  ...Object.values(project.openSource.websiteLocales).map((locale) => project.freePlan.localizedSource.replace('{locale}', locale)),
   project.support,
   ...project.platforms.map(({ url }) => url),
   project.evidence.securityAudit.repository,

@@ -25,13 +25,13 @@ Các trang nền tảng chính thức cung cấp ứng dụng SingLinkVPN mới 
 - [Windows](https://singlinkvpn.com/en/download/windows/)
 - [macOS](https://singlinkvpn.com/en/download/macos/)
 - [Linux](https://singlinkvpn.com/en/download/linux/)
-- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+- [Apple TV](https://singlinkvpn.com/en/download/appletv/)
 
 ## Gói VPN miễn phí
 
 Free Plan của SingLinkVPN cung cấp 200 MB dữ liệu VPN miễn phí mỗi ngày trên di động và 500 MB mỗi ngày trên máy tính. Các chương trình máy tính đủ điều kiện cung cấp tối đa 1 GB mỗi ngày.
 
-- [Gói VPN miễn phí](https://singlinknews.com/free-plan)
+- [Gói VPN miễn phí](https://singlinkvpn.com/vi/pricing/)
 
 ## Bằng chứng bảo mật và quyền riêng tư
 

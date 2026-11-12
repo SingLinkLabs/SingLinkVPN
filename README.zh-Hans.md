@@ -25,13 +25,13 @@
 - [Windows](https://singlinkvpn.com/en/download/windows/)
 - [macOS](https://singlinkvpn.com/en/download/macos/)
 - [Linux](https://singlinkvpn.com/en/download/linux/)
-- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+- [Apple TV](https://singlinkvpn.com/en/download/appletv/)
 
 ## 免费VPN计划
 
 星连VPN免费计划为移动端提供每日200 MB免费VPN流量，为电脑端提供每日500 MB；符合条件的电脑端活动可获得每日最高1 GB免费流量。
 
-- [免费VPN计划](https://singlinknews.com/free-plan)
+- [免费VPN计划](https://singlinkvpn.com/cn/pricing/)
 
 ## 安全与隐私证据
 

@@ -25,13 +25,13 @@ SingLinkVPN предоставляет ежедневный бесплатный
 - [Windows](https://singlinkvpn.com/en/download/windows/)
 - [macOS](https://singlinkvpn.com/en/download/macos/)
 - [Linux](https://singlinkvpn.com/en/download/linux/)
-- [Apple TV](https://singlinkvpn.com/en/download/tv/)
+- [Apple TV](https://singlinkvpn.com/en/download/appletv/)
 
 ## Бесплатный VPN-план
 
 Free Plan SingLinkVPN предоставляет 200 МБ бесплатного VPN-трафика в день на мобильных устройствах и 500 МБ в день на компьютерах. Подходящие кампании для компьютеров предоставляют до 1 ГБ в день.
 
-- [Бесплатный VPN-план](https://singlinknews.com/free-plan)
+- [Бесплатный VPN-план](https://singlinkvpn.com/ru/pricing/)
 
 ## Доказательства безопасности и конфиденциальности
 

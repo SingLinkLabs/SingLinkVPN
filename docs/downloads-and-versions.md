@@ -9,7 +9,7 @@ Official platform pages provide the current compatible SingLinkVPN build, prereq
 | Windows | <https://singlinkvpn.com/en/download/windows/> |
 | macOS | <https://singlinkvpn.com/en/download/macos/> |
 | Linux | <https://singlinkvpn.com/en/download/linux/> |
-| Apple TV | <https://singlinkvpn.com/en/download/tv/> |
+| Apple TV | <https://singlinkvpn.com/en/download/appletv/> |
 
 Use the [all-platform download center](https://singlinkvpn.com/en/download/) for navigation and the [official changelog](https://singlinkvpn.com/en/tech/changelog/) for published version history.
 

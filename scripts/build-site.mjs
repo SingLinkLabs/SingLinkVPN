@@ -25,6 +25,8 @@ const escapeHtml = (value) => String(value)
   .replaceAll("'", '&#39;');
 
 const [protocolRepo, appRepo] = project.openSource.repositories;
+const freePlanUrl = (locale) =>
+  project.freePlan.localizedSource.replace('{locale}', project.openSource.websiteLocales[locale]);
 const announcement = (key, locale) =>
   project.openSource.announcements[key].replace('{locale}', project.openSource.websiteLocales[locale]);
 const routeFor = (locale) => locale === 'en' ? '/' : `/${locale}/`;
@@ -84,7 +86,7 @@ function page(copy, locale) {
           '@type': 'Offer',
           price: '0',
           priceCurrency: 'USD',
-          url: project.freePlan.source,
+          url: freePlanUrl(locale),
           description: copy.free,
         },
         featureList: [copy.freeTitle, copy.openSourceTitle, copy.auditTitle, copy.noLogsTitle, copy.techTitle],
@@ -148,7 +150,7 @@ function page(copy, locale) {
     <section class="grid">
       <article class="card wide"><h2>${escapeHtml(copy.aboutTitle)}</h2><p>${escapeHtml(copy.about)}</p><p>${link(project.newsCenter, copy.labels.newsCenter)} · ${link(project.changelog, copy.labels.changelog)} · ${link(project.support, copy.labels.support)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.downloadsTitle)}</h2><p>${escapeHtml(copy.downloads)}</p><ul class="platforms">${platformLinks}</ul></article>
-      <article class="card"><h2>${escapeHtml(copy.freeTitle)}</h2><p>${escapeHtml(copy.free)}</p><p>${link(project.freePlan.source, copy.freeTitle)}</p></article>
+      <article class="card"><h2>${escapeHtml(copy.freeTitle)}</h2><p>${escapeHtml(copy.free)}</p><p>${link(freePlanUrl(locale), copy.freeTitle)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.auditTitle)}</h2><p>${escapeHtml(copy.audit)}</p><p>${link(project.evidence.securityAudit.repository, copy.labels.securityRepo)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.noLogsTitle)}</h2><p>${escapeHtml(copy.noLogs)}</p><p>${link(project.evidence.noLogsVerification.repository, copy.labels.noLogsRepo)}</p></article>
       <article class="card"><h2>${escapeHtml(copy.techTitle)}</h2><p>${escapeHtml(copy.tech)}</p><p>${link(project.technology.solaArticle, copy.labels.sola)}</p></article>

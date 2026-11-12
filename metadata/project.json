@@ -15,7 +15,8 @@
     "mobileDailyMb": 200,
     "desktopDailyMb": 500,
     "eligibleDesktopPromotionDailyMb": 1000,
-    "source": "https://singlinknews.com/free-plan"
+    "source": "https://singlinkvpn.com/en/pricing/",
+    "localizedSource": "https://singlinkvpn.com/{locale}/pricing/"
   },
   "openSource": {
     "status": "Phase 2 released on 2026-11-12: the SingLink Protocol and the SingLinkVPN first-generation prototype app are open source under Apache-2.0; documentation, research data and tools continue to be published in phases",
@@ -60,7 +61,7 @@
     { "name": "Windows", "url": "https://singlinkvpn.com/en/download/windows/" },
     { "name": "macOS", "url": "https://singlinkvpn.com/en/download/macos/" },
     { "name": "Linux", "url": "https://singlinkvpn.com/en/download/linux/" },
-    { "name": "Apple TV", "url": "https://singlinkvpn.com/en/download/tv/" }
+    { "name": "Apple TV", "url": "https://singlinkvpn.com/en/download/appletv/" }
   ],
   "evidence": {
     "securityAudit": {
