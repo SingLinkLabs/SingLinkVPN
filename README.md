@@ -59,7 +59,7 @@ Sola is SingLink's next-generation VPN transport protocol rebuilt from the SingL
 
 Phase 2 of the SingLinkVPN open-source project was released on 12 November 2026. After an internal security audit, SingLinkLabs published the first-generation SingLink protocol and the first-generation SingLinkVPN client in two Apache-2.0 repositories, and the open-source hub links both.
 
-The SingLink protocol has evolved from SingLinkVPN's early versions to today's SingLink 2.0. The open-source first-generation SingLink protocol and first-generation SingLinkVPN client carry forward SingLinkVPN's long-standing design principles: account-based permissions, device binding and security by design.
+The SingLink protocol has evolved from SingLinkVPN's early versions and SingLink Beta to today's SingLink 2.0. The open-source first-generation SingLink protocol and first-generation SingLinkVPN client carry forward SingLinkVPN's long-standing design principles: account-based permissions, device binding and security by design.
 
 - **[SingLink Protocol](https://github.com/SingLinkLabs/singlink-protocol)** · Apache-2.0 — SingLink/1, the first-generation version of the SingLink protocol, written from scratch in Go: signed, device-bound access passes, inner end-to-end encryption, hybrid X25519 + ML-KEM-768 post-quantum key exchange, and replay and active-probe resistance. The internal security audit recorded 31 findings, every High and Medium finding is fixed, and a third-party audit is planned.
 - **[SingLinkVPN first-generation client](https://github.com/SingLinkLabs/singlink-vpn-app)** · Apache-2.0 — Built with Flutter and Go on the SingLink Protocol for Windows, macOS, Android and iOS: a device-wide VPN on mobile and a system proxy on desktop.

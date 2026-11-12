@@ -88,6 +88,9 @@ test('all generated READMEs preserve evidence and reject stale claims', async ()
     assert.match(copy.openSourceLineage, /SingLink 2\.0/, `${locale} lineage names SingLink 2.0`);
     if (locale === 'zh-Hans') assert.doesNotMatch(markdown, /星連|SingLinkVPN(?!\/|-)/, 'Simplified brand only');
     if (locale === 'zh-Hant') assert.doesNotMatch(markdown, /星连|SingLinkVPN(?!\/|-)/, 'Traditional brand only');
+    if (locale === 'zh-Hant' || locale === 'zh-Hans') assert.doesNotMatch(markdown, /SingLink Beta/, 'Chinese text names the Beta protocol 星連 Beta / 星连 Beta');
+    if (locale === 'zh-Hant') assert.doesNotMatch(markdown, /星连 Beta/, 'Traditional Beta name');
+    if (locale === 'zh-Hans') assert.doesNotMatch(markdown, /星連 Beta/, 'Simplified Beta name');
     assert.doesNotMatch(markdown, /sg\.singlinkvpn\.com|download\.singlinkvpn\.com|unlimited bandwidth|300%|2000Mbps/i);
     assert.doesNotMatch(markdown, /not a claim|does not guarantee|must not|cannot be described|not a permanent guarantee|并不代表|不能表述|并非.*永久保证|不保证搜索|只适用于|不會自動|不保证搜索/i);
   }

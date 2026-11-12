@@ -11,7 +11,7 @@ After an internal security audit, SingLinkLabs published the first-generation Si
 | [singlink-protocol](https://github.com/SingLinkLabs/singlink-protocol) | SingLink Protocol (`SingLink/1`): the first-generation version of the SingLink protocol, written from scratch in Go. Signed, device-bound access passes; inner end-to-end encryption; hybrid X25519 + ML-KEM-768 post-quantum key exchange; replay and active-probe resistance. | First generation (spec 1.0 draft) · internal security audit (31 findings, all High and Medium fixed) · third-party audit planned · Apache-2.0 |
 | [singlink-vpn-app](https://github.com/SingLinkLabs/singlink-vpn-app) | The first-generation SingLinkVPN client for Windows, macOS, Android and iOS (Flutter + Go), built on the SingLink Protocol. Device-wide VPN on mobile, system proxy on desktop. | First-generation client (prototype) · Apache-2.0 |
 
-The SingLink protocol has evolved from SingLinkVPN's early versions to today's SingLink 2.0. The open-source first-generation SingLink protocol and first-generation SingLinkVPN client carry forward SingLinkVPN's long-standing design principles: account-based permissions, device binding and security by design.
+The SingLink protocol has evolved from SingLinkVPN's early versions and SingLink Beta to today's SingLink 2.0. The open-source first-generation SingLink protocol and first-generation SingLinkVPN client carry forward SingLinkVPN's long-standing design principles: account-based permissions, device binding and security by design.
 
 The [open-source hub](https://github.com/SingLinkLabs/singlink-vpn-open-source) links both repositories and continues to publish documentation, research data, security materials and benchmarks.
 

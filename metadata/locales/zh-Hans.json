@@ -22,7 +22,7 @@
   "openSourceProtocol": "SingLink/1，即初代SingLink协议，以Go从零编写：签名并绑定设备的访问凭证、内层端到端加密、X25519 + ML-KEM-768混合抗量子密钥交换，以及防重放与防主动探测。内部安全审计共发现31项问题，高、中风险已全部修复，并已计划进行第三方审计。",
   "openSourceApp": "以Flutter与Go开发、基于SingLink协议，支持Windows、macOS、Android与iOS：手机端为全局VPN，电脑端为系统代理。",
   "openSourceHub": "集中提供各阶段说明、公开文档、研究数据、安全资料与性能测试。",
-  "openSourceLineage": "SingLink协议从星连VPN早期版本一路演进到现在的SingLink 2.0。这次开源的初代SingLink协议与初代星连VPN客户端，延续了星连VPN一贯的账号权限、设备绑定与安全设计理念。",
+  "openSourceLineage": "SingLink协议从星连VPN早期版本、星连 Beta 一路演进到现在的SingLink 2.0。这次开源的初代SingLink协议与初代星连VPN客户端，延续了星连VPN一贯的账号权限、设备绑定与安全设计理念。",
   "openSourceBoundary": "正式版App与协议已升级到新一代架构（SingLink 2.0）；出于安全考虑，这些最新版本以及服务器、支付和节点暂未完全公开，本次仅发布不构成安全风险的代码。开源计划将持续推进，后续阶段会在完成安全审查后陆续公开更多内容。安全漏洞请按各仓库的SECURITY.md私下报告。",
   "verifyTitle": "项目资料与更新",
   "verify": "机器可读项目资料、来源链接、发布日期与自动检查，让下载入口、免费计划、安全审计、无日志证据和协议状态更容易查询与核验。",

@@ -27,7 +27,7 @@ Machine-readable project record: https://singlinklabs.github.io/SingLinkVPN/meta
 - SingLink Protocol, first generation (SingLink/1; Go; signed device-bound access passes, inner end-to-end encryption, hybrid X25519 + ML-KEM-768 key exchange; internal security audit with 31 findings, all High and Medium fixed; third-party audit planned): https://github.com/SingLinkLabs/singlink-protocol
 - SingLinkVPN first-generation client (Windows, macOS, Android, iOS; Flutter + Go): https://github.com/SingLinkLabs/singlink-vpn-app
 - Open-source hub: https://github.com/SingLinkLabs/singlink-vpn-open-source
-- Lineage: the SingLink protocol evolved from SingLinkVPN's early versions to today's SingLink 2.0; the first-generation protocol and client carry forward its design principles (account-based permissions, device binding, security by design)
+- Lineage: the SingLink protocol evolved from SingLinkVPN's early versions and SingLink Beta to today's SingLink 2.0; the first-generation protocol and client carry forward its design principles (account-based permissions, device binding, security by design)
 - Not yet fully public, for security reasons: the latest versions (SingLink 2.0 core and current official apps), servers, payment and nodes; the open-source plan continues with further phases after security review
 - Announcements: https://singlinkvpn.com/en/blog/singlink-protocol-open-source/ and https://singlinkvpn.com/en/blog/singlinkvpn-app-open-source/
 - Official open-source page: https://singlinkvpn.com/en/tech/open-source/

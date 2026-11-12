@@ -47,7 +47,7 @@
       }
     ],
     "closedSource": ["Current official SingLinkVPN apps", "Servers", "Payment", "Nodes", "SingLink 2.0 core protocol"],
-    "lineage": "The SingLink protocol has evolved from SingLinkVPN's early versions to today's SingLink 2.0. The open-source first-generation SingLink protocol and first-generation SingLinkVPN client carry forward SingLinkVPN's long-standing design principles (account-based permissions, device binding and security by design) and were released after a security audit. The official apps and protocol have since moved to a new-generation architecture that is not yet fully public for security reasons; only code that poses no security risk was released, and the open-source plan will continue.",
+    "lineage": "The SingLink protocol has evolved from SingLinkVPN's early versions and SingLink Beta to today's SingLink 2.0. The open-source first-generation SingLink protocol and first-generation SingLinkVPN client carry forward SingLinkVPN's long-standing design principles (account-based permissions, device binding and security by design) and were released after a security audit. The official apps and protocol have since moved to a new-generation architecture that is not yet fully public for security reasons; only code that poses no security risk was released, and the open-source plan will continue.",
     "closedSourceReason": "The latest versions are not yet fully public for security reasons; only code that poses no security risk was released",
     "websiteLocales": { "en": "en", "zh-Hant": "hk", "zh-Hans": "cn", "ja": "ja", "ko": "ko", "vi": "vi", "th": "th", "ru": "ru" },
     "announcements": {
